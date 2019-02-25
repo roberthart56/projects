@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<title>Thermistors as airflow sensors</title>
+
+<xmp theme="journal" style="display:none;">
+<br>
+
+
+###Jan 11, 2019
+
+Tried RTD (Platinum, R increases with T) 1kOhm thermistor.  16V, use 6 Ohm sense.  See 10% current drop in light wind.
+This should be more sensitive when run in const. T mode.  Smaller device faster and more sensitive as well.
+Will try 100 Ohm NTC device in small package, ordered from Digikey.
+
+###Jan 14, 2019.
+
+Soldered up the 0402 NTC 100 Ohm thermistor.
+
+![picture](./NTC0402.png)
+
+[datasheet](https://product.tdk.com/info/en/catalog/datasheets/503021/tpd_commercial_ntc-thermistor_ntcg_en.pdf)
+
+
+###Jan 17, 2019
+
+Used NTC thermistor 0402 as a wind sensor.  Works conveniently near 5V.
+
+![Notebook page](NTC_0402_Thermistor.jpg)
+
+Notebook page.  Use 18 Ohm sense resistor.  Resistance of thermistor falls from 109 at 21C to about 4 Ohms when
+it dissipates about 0.2W at 3.7 Ohm.  Then when fan blows, the voltage on the sense resistor falls as the resistance
+of the thermistor increases.  This gives a "const. voltage" method that is easy to apply.
+
+![time_response](./Response_thermistor.png)
+Full horizontal frame about 70 seconds.  Response to blowing.
+Recovery tau ~6 sec.
+Note that thermistor is soldered to wires that are of diameter close to that of thermistor.  Not well isolated thermally.
+
+Applied to Arduino, average 1000 points.  [arduino sketch](./AnalogReadSerial_N_ave)
+
+
+![Constant_temp](Const_temp.jpg)
+
+If we implement a constant Temp. circuit/algorithm, we'll get 20% voltage
+change, as opposed to ~10% change in current under const-applied voltage method.
+
+
+Next:
+
+- import and plot thermistor data:  csv - list - array.  See nelson book.
+- make circuitboard to get better thermal isolation.
+
+</xmp>
+
+
+<script src="./../strapdown/strapdown.js"></script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<title>PWM on tiny 44</title>
+
+<xmp theme="bootstrap" style="display:none;">
+<br>
+
+##PWM on tiny44.
+
+###TC1 16 bit.
+
+In phase correct PWM, can have top defined by ICR1 which set freqency.
+Then duty cycle can be set with OCR1A, as in Neil's hello.servo.44.c example.
+
+I use Fast PWM with toggle of OC1A pin at each top for 50% duty cycle at variable frequency.  Top set by ICR1 register.
+
+###TC0 8 bit.
+
+In Fast PWM, set WGM to mode 3 (011). Then top is fixed at 255, and duty cycle can vary with OCR0A.  I hope.
+
+In Phase correct PWM,  cannot do the same trick of controlling both frequency and duty cycle.
+
+---
+
+
+
+</xmp>
+
+<script src="../strapdown/strapdown.js"></script>
+</html>
