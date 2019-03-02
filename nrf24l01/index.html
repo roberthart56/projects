@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<title>nrf24L01</title>
+
+<xmp theme="bootstrap" style="display:none;">
+<br>
+
+
+## Nrf24lo1
+
+###Dec 10
+
+got example working with Arduino from RF24 library.
+
+Some approaches:
+
+1.  Use RF24 libary with t44.  Uses USI.  Pins constrained.
+
+2.  Follow website from Fab Academy [(torino):](http://archive.fabacademy.org/2016/fablabtorino/students/440/exercises/W15/net.html)
+This gives a software SPI example.  I like the looks of it.
+
+3.  Use this to complete Neil's library.
+
+At least i think I understand enough to know which way to go on this.  It would be good to have
+a simple nrf solution.s
+
+###Jan 2019
+
+Already started KICAD project to attach tiny44 to nrf24L01 in configuration that is compatible with RF24 libraries
+but can also be used with software solutions.  In fabClass2018/nrf24l01/rf24_tiny44.
+
+ - next step is to add a couple of pins to header, so I can use same header to program t44.
+ - alternatively, connect rst and unused IRQ position with a wire!  I like this.
+ - would be good to add button as well.  Could hack this in as well, I guess.
+
+ 
+</xmp>
+
+<script src="../../strapdown/strapdown.js"></script>
+</html>

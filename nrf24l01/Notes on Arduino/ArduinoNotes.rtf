@@ -1,0 +1,51 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1347\cocoasubrtf570
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww12240\viewh10320\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 Notes on rf24\
+\
+Looks like RF24 library is now part of RadioHead library.  Still some good tutorials:\
+\
+tutorial on RF24 library.\
+{\field{\*\fldinst{HYPERLINK "https://arduino-info.wikispaces.com/Nrf24L01-2.4GHz-HowTo"}}{\fldrslt https://arduino-info.wikispaces.com/Nrf24L01-2.4GHz-HowTo}}\
+This works with two Arduinos on two computers.  Uses example sketch in library example directory, called \
+\
+\
+\
+\
+\
+bare bones example, explained a bit.\
+{\field{\*\fldinst{HYPERLINK "https://arduino-info.wikispaces.com/Nrf24L01-2.4GHz-ExampleSketches#bm1"}}{\fldrslt https://arduino-info.wikispaces.com/Nrf24L01-2.4GHz-ExampleSketches#bm1}}\
+\
+From Arduino sketch:  \
+begin\
+	cs pin high\
+	ce pin low\
+	(delay 5-100)\
+	write-register(NRF_CONFIG[0x00], 0x0C [ 0000 1100])  this enables 16-bit CRC. Default is 0x08, which is 1 byte. CRC  (cyclic redudancy check)\
+	setRetries(5,15)\
+	disable dynamic payloads:\
+		toggle_features()\
+		write_register(FEATURE, 0)\
+		write_register(DYNPD, 0)\
+	reset: write to status register(NRF_STATUS,_BV(RX_DR) | _BV(TX_DS) | _BV(MAX_RT) );\
+		set channel(76)\
+		flush_rx\
+		flush_tx\
+		powerUp()\
+		write to config register to leave in standby I mode.\
+	\
+setPALevel\
+openWritingPipe(\'932Node\'94) for example.\
+openReadingPipe(1,\'931Node\'94) for example.\
+startListening\
+stopListening   // in order to transmit.\
+available()\
+read\
+\
+\
+Another leaner set of code is here:  http://www.tinkerer.eu/AVRLib/\
+This is AVR c code, wirtten for specific AVRs.  Less clutter.\
+}

@@ -1,0 +1,346 @@
+EESchema Schematic File Version 4
+LIBS:rf24_tiny44-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATtiny:ATtiny441-SSU U1
+U 1 1 5C0EB492
+P 6200 3450
+F 0 "U1" H 5670 3496 50  0000 R CNN
+F 1 "ATtiny441-SSU" H 5670 3405 50  0000 R CNN
+F 2 "fab:fab-SOIC14" H 6200 3450 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8495-8-bit-AVR-Microcontrollers-ATtiny441-ATtiny841_Datasheet.pdf" H 6200 3450 50  0001 C CNN
+	1    6200 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J2
+U 1 1 5C0EB67C
+P 8050 3250
+F 0 "J2" H 8100 3567 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 8100 3476 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 8050 3250 50  0001 C CNN
+F 3 "~" H 8050 3250 50  0001 C CNN
+	1    8050 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Male J1
+U 1 1 5C0EBA27
+P 8050 2100
+F 0 "J1" H 8156 2478 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 8156 2387 50  0000 C CNN
+F 2 "fab:fab-1X06SMD" H 8050 2100 50  0001 C CNN
+F 3 "~" H 8050 2100 50  0001 C CNN
+	1    8050 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5C0EBADB
+P 5300 2700
+F 0 "R1" H 5370 2746 50  0000 L CNN
+F 1 "R" H 5370 2655 50  0000 L CNN
+F 2 "fab:fab-R1206FAB" V 5230 2700 50  0001 C CNN
+F 3 "~" H 5300 2700 50  0001 C CNN
+	1    5300 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5C0EBCA1
+P 8000 4250
+F 0 "C1" H 8115 4296 50  0000 L CNN
+F 1 "C" H 8115 4205 50  0000 L CNN
+F 2 "fab:fab-C1206" H 8038 4100 50  0001 C CNN
+F 3 "~" H 8000 4250 50  0001 C CNN
+	1    8000 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5C0EBD96
+P 6200 4350
+F 0 "#PWR03" H 6200 4100 50  0001 C CNN
+F 1 "GND" H 6205 4177 50  0000 C CNN
+F 2 "" H 6200 4350 50  0001 C CNN
+F 3 "" H 6200 4350 50  0001 C CNN
+	1    6200 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5C0EBEBF
+P 8000 4400
+F 0 "#PWR07" H 8000 4150 50  0001 C CNN
+F 1 "GND" H 8005 4227 50  0000 C CNN
+F 2 "" H 8000 4400 50  0001 C CNN
+F 3 "" H 8000 4400 50  0001 C CNN
+	1    8000 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 5C0EBF6A
+P 8850 1900
+F 0 "#PWR010" H 8850 1650 50  0001 C CNN
+F 1 "GND" H 8855 1727 50  0000 C CNN
+F 2 "" H 8850 1900 50  0001 C CNN
+F 3 "" H 8850 1900 50  0001 C CNN
+	1    8850 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 1900 8250 1900
+$Comp
+L power:GND #PWR011
+U 1 1 5C0EC0F9
+P 9050 3150
+F 0 "#PWR011" H 9050 2900 50  0001 C CNN
+F 1 "GND" H 9300 3150 50  0000 C CNN
+F 2 "" H 9050 3150 50  0001 C CNN
+F 3 "" H 9050 3150 50  0001 C CNN
+	1    9050 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 2550 5300 2550
+Wire Wire Line
+	5300 2850 5300 4600
+Wire Wire Line
+	5300 4600 6800 4600
+Wire Wire Line
+	6800 4050 6800 4600
+$Comp
+L power:VCC #PWR06
+U 1 1 5C0EC6C3
+P 8000 4100
+F 0 "#PWR06" H 8000 3950 50  0001 C CNN
+F 1 "VCC" H 8017 4273 50  0000 C CNN
+F 2 "" H 8000 4100 50  0001 C CNN
+F 3 "" H 8000 4100 50  0001 C CNN
+	1    8000 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM3480-12 U2
+U 1 1 5C0EC969
+P 7350 2050
+F 0 "U2" H 7350 2292 50  0000 C CNN
+F 1 "LM3480-12" H 7350 2201 50  0000 C CNN
+F 2 "fab:fab-SOT23" H 7350 2275 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm3480.pdf" H 7350 2050 50  0001 C CNN
+	1    7350 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 2100 7700 2100
+Wire Wire Line
+	7700 2100 7700 1750
+Wire Wire Line
+	7700 1750 7050 1750
+Wire Wire Line
+	7050 1750 7050 2050
+Wire Wire Line
+	7650 2050 7650 2500
+Wire Wire Line
+	7650 2500 6200 2500
+Wire Wire Line
+	6200 2500 6200 2550
+Connection ~ 6200 2550
+$Comp
+L power:GND #PWR04
+U 1 1 5C0ECB3D
+P 7350 2350
+F 0 "#PWR04" H 7350 2100 50  0001 C CNN
+F 1 "GND" H 7355 2177 50  0000 C CNN
+F 2 "" H 7350 2350 50  0001 C CNN
+F 3 "" H 7350 2350 50  0001 C CNN
+	1    7350 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 3250 7550 3250
+Wire Wire Line
+	7850 3350 7550 3350
+Wire Wire Line
+	8350 3250 8600 3250
+Wire Wire Line
+	8350 3350 8600 3350
+Wire Wire Line
+	8350 3450 8600 3450
+$Comp
+L Device:R R2
+U 1 1 5C1A5055
+P 5750 1550
+F 0 "R2" H 5820 1596 50  0000 L CNN
+F 1 "R" H 5820 1505 50  0000 L CNN
+F 2 "fab:fab-R1206FAB" V 5680 1550 50  0001 C CNN
+F 3 "~" H 5750 1550 50  0001 C CNN
+	1    5750 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5C1A51F1
+P 5750 1850
+F 0 "D1" V 5788 1733 50  0000 R CNN
+F 1 "LED" V 5697 1733 50  0000 R CNN
+F 2 "fab:fab-LED1206" H 5750 1850 50  0001 C CNN
+F 3 "~" H 5750 1850 50  0001 C CNN
+	1    5750 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5C1A522B
+P 5750 2150
+F 0 "#PWR02" H 5750 1900 50  0001 C CNN
+F 1 "GND" H 5755 1977 50  0000 C CNN
+F 2 "" H 5750 2150 50  0001 C CNN
+F 3 "" H 5750 2150 50  0001 C CNN
+	1    5750 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5C1A5D4E
+P 8800 4300
+F 0 "C2" H 8915 4346 50  0000 L CNN
+F 1 "C" H 8915 4255 50  0000 L CNN
+F 2 "fab:fab-C1206" H 8838 4150 50  0001 C CNN
+F 3 "~" H 8800 4300 50  0001 C CNN
+	1    8800 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5C1A5D55
+P 8800 4450
+F 0 "#PWR09" H 8800 4200 50  0001 C CNN
+F 1 "GND" H 8805 4277 50  0000 C CNN
+F 2 "" H 8800 4450 50  0001 C CNN
+F 3 "" H 8800 4450 50  0001 C CNN
+	1    8800 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR08
+U 1 1 5C1A5D5B
+P 8800 4150
+F 0 "#PWR08" H 8800 4000 50  0001 C CNN
+F 1 "VCC" H 8817 4323 50  0000 C CNN
+F 2 "" H 8800 4150 50  0001 C CNN
+F 3 "" H 8800 4150 50  0001 C CNN
+	1    8800 4150
+	1    0    0    -1  
+$EndComp
+Text GLabel 7550 3350 0    50   Input ~ 0
+MOSI
+Text GLabel 8600 3250 2    50   Input ~ 0
+CE
+Wire Wire Line
+	8350 3150 9050 3150
+Text GLabel 8600 3350 2    50   Input ~ 0
+SCK
+Text GLabel 8600 3450 2    50   Input ~ 0
+MISO
+Text GLabel 7550 3250 0    50   Input ~ 0
+CSN
+Text GLabel 6800 3050 2    50   Input ~ 0
+CSN
+Text GLabel 6800 3450 2    50   Input ~ 0
+MOSI
+Text GLabel 6800 2950 2    50   Input ~ 0
+CE
+Text GLabel 6800 3250 2    50   Input ~ 0
+SCK
+Text GLabel 6800 3350 2    50   Input ~ 0
+MISO
+Text GLabel 6800 2850 2    50   Input ~ 0
+BUTTON
+Text GLabel 6800 3150 2    50   Input ~ 0
+LED
+Text GLabel 5750 1400 1    50   Input ~ 0
+LED
+Text GLabel 6800 3750 2    50   Input ~ 0
+XTAL1
+Text GLabel 6800 3850 2    50   Input ~ 0
+XTAL2
+Text GLabel 6800 4050 2    50   Input ~ 0
+RST
+Connection ~ 8250 1900
+Wire Wire Line
+	8000 2100 8000 2050
+Wire Wire Line
+	8000 2050 8250 2050
+Wire Wire Line
+	8250 2050 8250 2100
+Wire Wire Line
+	8250 1900 8850 1900
+Text GLabel 8250 2200 2    50   Input ~ 0
+RX
+Text GLabel 8250 2300 2    50   Input ~ 0
+TX
+Text GLabel 6800 3950 2    50   Input ~ 0
+RX
+Text GLabel 6800 3550 2    50   Input ~ 0
+TX
+Wire Wire Line
+	5750 2150 5750 2000
+Text GLabel 6200 2500 1    50   Input ~ 0
+VCC
+Text GLabel 8000 4150 0    50   Input ~ 0
+VCC
+Text GLabel 8800 4200 0    50   Input ~ 0
+VCC
+Text GLabel 7850 3150 0    50   Input ~ 0
+VCC
+$Comp
+L Device:R R3
+U 1 1 5C1A902D
+P 4600 2600
+F 0 "R3" H 4670 2646 50  0000 L CNN
+F 1 "R" H 4670 2555 50  0000 L CNN
+F 2 "fab:fab-R1206FAB" V 4530 2600 50  0001 C CNN
+F 3 "~" H 4600 2600 50  0001 C CNN
+	1    4600 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5C1A90BD
+P 4600 2750
+F 0 "#PWR05" H 4600 2500 50  0001 C CNN
+F 1 "GND" H 4605 2577 50  0000 C CNN
+F 2 "" H 4600 2750 50  0001 C CNN
+F 3 "" H 4600 2750 50  0001 C CNN
+	1    4600 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5C1A90DC
+P 4400 2450
+F 0 "#PWR01" H 4400 2200 50  0001 C CNN
+F 1 "GND" H 4405 2277 50  0000 C CNN
+F 2 "" H 4400 2450 50  0001 C CNN
+F 3 "" H 4400 2450 50  0001 C CNN
+	1    4400 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2450 4600 2450
+$EndSCHEMATC
