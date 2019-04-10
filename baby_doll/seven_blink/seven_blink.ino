@@ -12,22 +12,31 @@
   modified 8 May 2014
   by Scott Fitzgerald
  */
+const byte out[] = {2,3,4,5,6,7,8,9,10};
 
-byte out1 = 2;
-byte out2 = 3;
+
 
 void setup() {
+  Serial.begin(115200); 
   
-  pinMode(out1, OUTPUT);
-  pinMode(out2, OUTPUT);
+  for(int i = 0; i < sizeof(out); i++){
+    pinMode(out[i], OUTPUT);
+  }  
 }
 
-// the loop function runs over and over again forever
+void motor_on(byte N){
+  digitalWrite(N,HIGH);
+}
+
+void motor_off(byte N){
+  digitalWrite(N,LOW);
+}
+
 void loop() {
-  digitalWrite(out1, HIGH);   // turn the LED on (HIGH is the voltage level)
-  digitalWrite(out2, HIGH);
-  delay(200);              // wait for a second
-  digitalWrite(out1, LOW);    // turn the LED off by making the voltage LOW
-  digitalWrite(out2, LOW); 
-  delay(600);              // wait for a second
+  byte n= random(0,3);
+  motor_on(n);
+  delay(200);
+  motor_off(n);
+  delay(600);
+  Serial.println(n);
 }
