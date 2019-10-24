@@ -2,7 +2,7 @@
 // Add functin to trade one byte acc. to SPI protocol.
 //This will be the basis of all other functions.
 //implemented here in SPI_exchange, which accepts a pointer for the return variable.
-//and a function that reads status and returns a byte.  I was not able to have this second function accept a pointer.  
+//and a function that reads status and returns a byte.  I was not able to have this second function accept a pointer.
 //Why not?
 //
 //
@@ -18,7 +18,7 @@
 // This work may be reproduced, modified, distributed,
 // performed, and displayed for any purpose. Copyright is
 // retained and must be preserved. The work is provided
-// as is; no warranty is provided, and users accept all 
+// as is; no warranty is provided, and users accept all
 // liability.
 //
 // includes
@@ -245,7 +245,7 @@ void put_char(volatile unsigned char *port, unsigned char pin, char txchar) {
 	  //
 	  //
 
-	  
+
    void SPI_exchange(unsigned char command, unsigned char *read_buffer) {
    unsigned char bit;
    //
@@ -271,7 +271,7 @@ void put_char(volatile unsigned char *port, unsigned char pin, char txchar) {
          *read_buffer |= (1 << (7-bit));
 	  SPI_delay();
       clear(SCK_port,SCK_pin);
-      
+
       }
    SPI_delay();
    }
@@ -291,7 +291,7 @@ unsigned char Read_status(void) {
    //
    //
 unsigned char Read_register(reg) {
-	   unsigned char ret;		
+	   unsigned char ret;
 	   SPI_exchange(reg, &ret);
 	   SPI_exchange(NOP, &ret);
 	     	   return ret;
@@ -342,12 +342,12 @@ int main(void) {
 	   //  Call function to read a register
 	   //
 	   set(CS_port,CS_pin);
-	   result = Read_register(CONFIG);  //EN_AA is 3F
+	   result = Read_register(EN_AA);  //EN_AA is 3F
 	   put_char(&serial_port,serial_pin_out, result	);
 	   char_delay();
-	   
-	   
-	   
-	 
+
+
+
+
       }
    }

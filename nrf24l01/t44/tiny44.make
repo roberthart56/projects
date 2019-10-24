@@ -1,4 +1,4 @@
-PROJECT=nRF_09
+PROJECT=nRF_01
 SOURCES=$(PROJECT).c
 MMCU=attiny44
 F_CPU = 8000000
@@ -8,10 +8,10 @@ CFLAGS=-mmcu=$(MMCU) -Wall -Os -DF_CPU=$(F_CPU)
 $(PROJECT).hex: $(PROJECT).out
 	avr-objcopy -O ihex $(PROJECT).out $(PROJECT).c.hex;\
 	avr-size --mcu=$(MMCU) --format=avr $(PROJECT).out
- 
+
 $(PROJECT).out: $(SOURCES)
 	avr-gcc $(CFLAGS) -I./ -o $(PROJECT).out $(SOURCES)
- 
+
 
 program-avrisp2: $(PROJECT).hex
 	avrdude -p attiny45 -P usb -c avrisp2 -U flash:w:$(PROJECT).c.hex

@@ -53,7 +53,78 @@ See [this link](https://forum.arduino.cc/index.php?topic=217865.0) for some dead
  [rec](./Arduino_nrf/Simple_rec/Simple_rec.ino)
  [xmit](./Arduino_nrf/Simple_xmit/Simple_xmit.ino)
 
+###Oct 14,2019
 
+Resurrect Arduino Uno send/receive.
+
+[hookup instructions](http://tmrh20.github.io/RF24/)
+
+Code previously revised from getting started examples:
+[rec](./Arduino_nrf/Simple_rec/Simple_rec.ino)
+[xmit](./Arduino_nrf/Simple_xmit/Simple_xmit.ino)
+
+This takes a few tries - too many connections!
+Try a few radios, jiggling connections, seems to work most of the time.  Maybe add filter caps on supply.
+
+Look at programming tiny44 with this library.
+Use version of [xmit program with serial removed.](./Arduino_nrf/Simple_xmit.t44/Simple_xmit.t44.ino)
+This does not load successfully.  Complains about SPI class.
+
+One more reasonable nrf library for AVR [here](https://github.com/antoineleclair/avr-nrf24l01/tree/master/src)
+Or maybe better, [this.](https://github.com/kehribar/nrf24L01_plus/blob/master/nrf24.c)
+
+[Downloaded here](./nRF24L01_plus-master)
+
+Looks like this can be used to guide the further development of neil's start to a library.
+
+###Oct 18, 2019
+
+Make Neil's hello-world [nrf24l01 board](http://academy.cba.mit.edu/classes/networking_communications/index.html)
+and add a known-working nrf24l01 module.
+
+Now receiving 0xOE from status query.  This looks like the reset value for the status register. (p59) according
+to timing diagram on p52 of datasheet.  Looks like status register byte comes back as first byte is being clocked into MOSI.
+
+Look at nRF_01 and nRF04 from my t44 directory (Dec 2016!).
+
+  - nRF_01 incorporates a byte-trade function.  Reads status register.
+  - nRF_04 adds a Register read function.  reads the second byte clocked in from radio.
+    - CONFIG register comes back as 0x08.
+    - Test this on other registers.  EN_AA is 0x3F - verified.
+  - nRR_05,06.  Worked on using pointer....?  Why?
+  - 07,08,09  added register-writing function.  prototype of data-writing function.  Did not work.
+
+Review this in more detail, and then look at Kehribar example library - rewrite functions to match?
+
+Modified the Kehribar example for my t44 hardware.
+
+  - Modify radioPinFunctions.c to reflect connections to MISO, MOSI, SCK, CE, CS.
+  - in main file, change serial out to PA3.
+  - after running Makefile, send avrdude command:  avrdude -c usbtiny -p t44 -U flash:w:./obj/main.hex
+  - Add lines in main to set the clock divider to 1.
+  - I don't follow what's happening with serial, but it works.
+  - memory required is 2k, about 50% full for t44. Not bad!
+  - t44 responds with "RX device ready".
+
+Modified tx as well.  Now both sides initialize and send a message.
+
+Added our usual put_char and put_string functions and rewrote serial outputs.  All still works! nrf24L021_modified_2.
+
+
+  - Next, add radio pin function to main
+  - then consider how to consolidate more code.
+  - Then see if it is possible to make functions less numerous and code more efficient.
+
+###Oct 23
+
+Ported the library into one file and started to translate to the local dialect, to make consistent with
+the "hello world" examples.
+
+  - rx works, using the third modification.  [File](./nrf24L01_modified_3/rx_example_mod_2_t44/nrf24l01_combined.c)
+  - did not get tx to work in same way.  mod_3 gave type mismatch warnings about variable 'temp' used in put_string function.
+  - move back to mod_2.  Now tx works, but does not send serial.
+
+Next, trade hardware.  See if problem is in software or hardware.
 </xmp>
 
 <script src="./../strapdown/strapdown.js"></script>
