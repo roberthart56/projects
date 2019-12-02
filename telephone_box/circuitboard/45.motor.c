@@ -38,7 +38,7 @@
 #define serial_pin_in (1 << PB0)
 #define serial_pin_out (1 << PB2)
 #define serial_interrupt (1 << PCIE)
-#define serial_interrupt_pin (1 << PCINT0)
+#define serial_interrupt_pin (1 << PCINT0)        //PCINT0 is on PB0:  serial in.
 
 #define motor_port PORTB
 #define motor_direction DDRB
@@ -187,17 +187,12 @@ ISR(PCINT0_vect) {
    //
    // pin change interrupt handler
    //
-   static char chr;
-   static char buffer[max_buffer] = {0};
-   static int index;
-   get_char(&serial_pins, serial_pin_in, &chr);
-   put_string(&serial_port, serial_pin_out, "45.echo.interrupt.c: you typed \"");
-   buffer[index++] = chr;
-   if (index == (max_buffer-1))
-      index = 0;
-   put_string(&serial_port, serial_pin_out, buffer);
-   put_char(&serial_port, serial_pin_out, '\"');
-   put_char(&serial_port, serial_pin_out, 10); // new line
+    clear (PCMSK, serial_interrupt_pin);
+   //cli();  //disable interrupts
+   set(motor_port, motor_pin);
+   _delay_ms(1000);
+    set (PCMSK, serial_interrupt_pin);
+   //sei();   //set interrupts
    }
 
 int main(void) {
@@ -227,9 +222,11 @@ int main(void) {
    // main loop
    //
    while (1) {
-      set(motor_port, motor_pin);
-      _delay_ms(200);
-     clear(motor_port, motor_pin);
-     _delay_ms(200);
+    set(motor_port, motor_pin);
+    _delay_ms(500);
+    clear(motor_port, motor_pin);
+    _delay_ms(500);
+
       }
+
    }

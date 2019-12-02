@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Jan2018</title>
+    <meta charset='utf-8'>
+
+    <link rel='stylesheet' href='../HartMar2016.css' type='text/css'>
+
+</head>
+  <body>
+    <section>
+      <h1>Flash Memory on t44 board.</h1>
+
+      <p>To explore storing and retrieving data.
+        <ul>
+          <li>RAM</li>
+          <li>progmem</li>
+          <li>SPI with flash memory</li>
+          <li>SPI with micro SD card.</li>
+          <li>Sound storage and retrieval.</li>
+
+        </ul>
+      </p>
+      <h3>Files for producing the board</h3>
+
+      <ul><li><a href="./Board_rev2/flash_mem.brd">Eagle board</a></li>
+        <li><a href="./Board_rev2/flash_mem.sch">Eagle Schematic</a></li>
+        <li><a href="./Board_rev2/outline.png">outline</a> </li>
+        <li><a href="./Board_rev2/traces.png">traces</a> </li></ul>
+        <h3>Programs</h3>
+
+        <ul>
+          <li><a href="./Programs/button_44_c.c">button (this one well commented for instructional purposes)</a></li>
+          <li><a href="./datasheet and programs/flash_spi_01.c">first program</a></li>
+          <p><img src='./Pictures/Board_Jan_9.jpg' width="200px">
+          <img src='./Pictures/Osc_Jan_9.jpg' width="200px">
+          <p>On scope trace, green=CS, yellow=CK, Blue=MOSI, purple=MISO.  Necessary to pull /RESET pin high in order for it to work.
+            Not necessary to pull /WP pin high, but it may not be a bad idea on the next board design to do so. </p>
+          <p>This program sends write enable command, then reads status register 1.  Return is 0x02 - only the write enable bit is high.  Note one too many falling edges on scope trace
+          Note that it takes ~7 microseconds between clk clear and set, while if statement is being evaluated.  Surprising
+        to me that it takes so long.  Why?  Better in assembly?  Quicker to use USI?</p>
+
+
+          <li><a href="./datasheet and programs/flash_spi_02.c">second program.</a>In read loop, ends with CK set.  Add scope picture.  Can now loop to get more bytes.</li>
+
+            <li>Next, generalize the function to allow reading and writing data.</li>
+            <ul>
+              <li><a href="./datasheet and programs/flash_spi_03.c">third program</a> with functions that write and read one byte in one memory location.</li>
+              <li>do proper passing of variables and pointers to functions</li>
+              <li><a href="./datasheet and programs/flash_spi_04.c">fourth program</a> passes address, commands, and data.  Next
+              use a data buffer of variable length.</li>
+              <li><a href="http://academy.cba.mit.edu/classes/embedded_programming/hello.ftdi.44.echo.c">Neil's echo program.</a> gives a lesson on passing pointers to functions.</li>
+                <ul>
+                  <li>void put_char(volatile unsigned char *port, unsigned char pin, char txchar).  Called by :  put_char(port, pin, str[index]);
+                    In this function txchar is a value, *port is used as *port</li>
+                  <li>void put_string(volatile unsigned char *port, unsigned char pin, char *str) Called by:put_string(&serial_port, serial_pin_out, buffer); where buffer is a pointer to an array.
+                    in the function the variable str is used as an array "str[index]" The variable port is used as "port"</li>
+                  <li></li>
+                </ul>
+                <li><a href="./datasheet and programs/flash_spi_05.c">5th program, flash_spi_05.c</a> Passes addresses, read-byte-array, write-byte array pointers
+                and number of bytes to read or write.  prints out two elements of read-array.  Uses one function to read and one
+                to write commands and addresses.  Incorporate "read status" function into the read function? Actuall, it's time to think about
+                function structure.  Maybe write a function to trade bytes that is called as needed by other functions.
+                <p><img src='./Pictures/Osc_Jan_10.jpg' width="400px"></p>
+                <p>Scope picture shows command on MOSI (Blue) to read, followed by three-byte address.  Two bytes
+                are read (purple) on MISO.  Time to write a byte: 50 usec.  Time to read byte: 34 usec, depending on bit value.  Why so long??
+              </p></li>
+                <li><p><img src='./Pictures/prog_fragment.png' width="400px"></p>
+                  Here's the fragment of the program.  The time between clearing SCK and setting it in the top
+                  of the loop is 4-9 microseconds at a clock speed of 8MHz.  Why?</li>
+                </ul>
+            <li>I've learned so far:</li>
+            <ul>
+                  <li>Chip needs to have /RESET high.</li>
+                  <li>Write on rising edge of clock.  Read on falling edge.</li>
+                  <li>locations must be erased in order to be written.  No overwriting. Writing takes ~50 usec per byte. (with overhead).</li>
+                  <li>With this c-program, read time ~33 usec per byte (with overhead).</li>
+                  <li></li>
+            </ul>
+            <li>Next things</li>
+
+            <ul>
+                <li>Write a program to read sound and replay.  Just fast enough.</li>
+                  <li>Find out why it takes so long in conditional statements. Try assembly function.</li>
+                  <li>Modularize the functional structure.  Byte-trading.</li>
+                  <li>Implementing USI on t44 in assembly or c. </li>
+            </ul>
+            <p></p>
+            <li><a href="./datasheet and programs/flash_spi_B01.c">B01 program, flash_spi_B01.c</a> This program uses a function
+            to trade bytes with chip.  This will be slower, because I'm sending and receiving each time around.  It will be modular, and
+            next step can be either to use USI for faster trades, or speed up the loop using assembly tools. B01 uses a byte_trade function
+            and unrolls the commands</li>
+              <ul>
+                  <li>Write enable bit seems to be cleared by writing and erasing, but not by reading.</li>
+
+                    <li></li>
+                    <li></li>
+              </ul>
+              <li><a href="./datasheet and programs/flash_spi_B02.c">B02 program, flash_spi_B01.c</a> Now move unrolled loops into functions.  This iteration has a function
+              to write enable, read status from address.  Next step is to pass an address array and then read/write n bytes.</li>
+                <ul>
+                      <li></li>
+                      <li></li>
+                </ul>
+              <li><a href="./datasheet and programs/flash_spi_B03.c">B03 program, flash_spi_B01.c</a> Now send array for address to read function.</li>
+                <ul>
+                      <li></li>
+                      <li></li>
+                </ul>
+
+                <li><a href="./datasheet and programs/flash_spi_B04.c">B04 program, flash_spi_B04.c</a> This program receives bytes into an array in read function.</li>
+                <li><a href="./datasheet and programs/flash_spi_B05.c">B05 program, flash_spi_B05.c</a> added nbytes and loop to read nbytes of data.</li>
+                <li><a href="./datasheet and programs/flash_spi_B06.c">B06 program, flash_spi_B06.c</a> Added write function to accept array pointers
+                  for address and data, and nbytes.  Put sector_erase into function.  Nice point to stop and clean up and measure timing.</li>
+                  <ul>
+                        <li><img src='./Pictures/Read_4_bytes_compressed.jpg' width="300px"><img src='./Pictures/Read_4_bytes_zoom_in_compressed.jpg' width="300px">
+                        <p>Reading four bytes, which takes four bytes sent and four received, takes 500 microseconds.  Zooming in, see that reading
+                          a byte takes 53 microseconds.
+                        </p></li>
+                        <li></p><img src='./Pictures/Bit_trade_function.png' width="300px"> The function that trades bits.  Takes 6-10 microseconds at a clock speed of 8MHz.</li></li>
+                  </ul>
+        </ul>
+
+
+
+
+    </section>
+  </body>
+</html>

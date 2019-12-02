@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(255, 0, 0, 1);;     <!-- property:value pairs are called declarations -->
+    color:black;
+}
+
+section{
+  background-color: rgba(0,0,0,0.05);
+
+  border:2px solid black;
+  width: 850px;
+  margin:auto;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: left;
+}
+
+
+
+h1 {
+    font-family:Georgia;
+    text-align:center;
+}
+
+h2 {
+    font-family:Georgia;
+    font-size: medium;
+    font-weight:bold;
+}
+
+h3 {
+    font-family:Georgia;
+    font-size: small;
+    font-weight:bold;
+}
+img {
+    background-color: white;
+    border:2px solid black;
+    padding:2px;
+    margin-left: 10px;
+}
+
+
+.left-pic {
+  border:5px solid black;
+  margin-left: 10px;
+}
+
+
+.right-pic {
+  border:5px solid black;
+  margin-left: 10px;
+}

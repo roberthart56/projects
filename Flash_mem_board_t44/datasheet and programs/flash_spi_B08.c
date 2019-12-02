@@ -1,0 +1,416 @@
+//
+// 
+//
+//9600 baud FTDI SPI for flash memory W25Q128JV-DTR 3V 128M-BIT
+//SERIAL FLASH MEMORY
+//    no fuse
+//
+//Modified by Robert Hart, from  Neil Gershenfeld
+//    11/29/16
+//
+// (c) Massachusetts Institute of Technology 2016
+// This work may be reproduced, modified, distributed,
+// performed, and displayed for any purpose. Copyright is
+// retained and must be preserved. The work is provided
+// as is; no warranty is provided, and users accept all 
+// liability.
+//
+// includes
+//
+#include <avr/io.h>
+#include <util/delay.h>
+//
+// macros
+//
+#define output(directions,pin) (directions |= pin) // set port direction for output
+#define set(port,pin) (port |= pin) // set port pin
+#define clear(port,pin) (port &= (~pin)) // clear port pin
+#define pin_test(pins,pin) (pins & pin) // test for port pin
+#define bit_test(byte,bit) (byte & (1 << bit)) // test for bit set
+#define bit_delay_time 102 // bit delay in us for 9600 with overhead at 8 MHz
+#define bit_delay() _delay_us(bit_delay_time) // RS232 bit delay
+#define half_bit_delay() _delay_us(bit_delay_time/2) // RS232 half bit delay
+#define char_delay() _delay_ms(10) // char delay
+#define SPI_delay() _delay_us(1) // SPI delay
+//
+// define serial
+//
+#define serial_port PORTA
+#define serial_direction DDRA
+#define serial_pins PINA
+#define serial_pin_in (1 << PA0)
+#define serial_pin_out (1 << PA1)
+//
+// define pins
+//
+#define CS_port PORTB
+#define CS_direction DDRB
+#define CS_pin (1 << PB2)
+#define SCK_port PORTB
+#define SCK_direction DDRB
+#define SCK_pin (1 << PB0)
+#define MOSI_port PORTB
+#define MOSI_direction DDRB
+#define MOSI_pin (1 << PB1)
+#define MISO_pins PINA
+#define MISO_direction DDRA
+#define MISO_pin (1 << PA7)
+
+#define button_port PORTA		// The button is on port A
+#define button_direction DDRA	//  DDRA defines input/output for port A
+#define button_pin (1 << PA4)	//  The button is on pin 4 of port A
+#define button_pins PINA			//  PINA is the register that is read to detect input high or low.
+#define LED_port PORTA		//  port A will be used for the LED
+#define LED_direction DDRA	//  Direction port for LED
+#define LED_pin (1 << PA3)	// LED ON PA3 (PHYSICAL PIN 10)
+
+//
+// define commands
+//
+#define READ_ST_REG_1 0X05
+#define READ_ST_REG_2 0X35
+#define READ_ST_REG_3 0X15
+#define WRITE_ENABLE 0X06
+#define READ_DATA 0X03
+#define WRITE_DATA 0X02
+#define SECTOR_ERASE 0X20
+#define BLOCK_ERASE32 0X52
+#define BLOCK_ERASE64 0XD8
+#define CHIP_ERASE 0XC7
+
+// define registers
+//
+#define CONFIG 0x00
+
+//
+// get_char
+//    read character into rxbyte on pins pin
+//    assumes line driver (inverts bits)
+//
+//
+void get_char(volatile unsigned char *pins, unsigned char pin, char *rxbyte) {
+   *rxbyte = 0;
+   while (pin_test(*pins,pin))
+      //
+      // wait for start bit
+      //
+      ;
+   //
+   // delay to middle of first data bit
+   //
+   half_bit_delay();
+   bit_delay();
+   //
+   // unrolled loop to read data bits
+   //
+   if pin_test(*pins,pin)
+      *rxbyte |= (1 << 0);
+   else
+      *rxbyte |= (0 << 0);
+   bit_delay();
+   if pin_test(*pins,pin)
+      *rxbyte |= (1 << 1);
+   else
+      *rxbyte |= (0 << 1);
+   bit_delay();
+   if pin_test(*pins,pin)
+      *rxbyte |= (1 << 2);
+   else
+      *rxbyte |= (0 << 2);
+   bit_delay();
+   if pin_test(*pins,pin)
+      *rxbyte |= (1 << 3);
+   else
+      *rxbyte |= (0 << 3);
+   bit_delay();
+   if pin_test(*pins,pin)
+      *rxbyte |= (1 << 4);
+   else
+      *rxbyte |= (0 << 4);
+   bit_delay();
+   if pin_test(*pins,pin)
+      *rxbyte |= (1 << 5);
+   else
+      *rxbyte |= (0 << 5);
+   bit_delay();
+   if pin_test(*pins,pin)
+      *rxbyte |= (1 << 6);
+   else
+      *rxbyte |= (0 << 6);
+   bit_delay();
+   if pin_test(*pins,pin)
+      *rxbyte |= (1 << 7);
+   else
+      *rxbyte |= (0 << 7);
+   //
+   // wait for stop bit
+   //
+   bit_delay();
+   half_bit_delay();
+   }
+//
+// put_char
+//    send character in txchar on port pin
+//    assumes line driver (inverts bits)
+//
+void put_char(volatile unsigned char *port, unsigned char pin, char txchar) {
+   //
+   // start bit
+   //
+   clear(*port,pin);
+   bit_delay();
+   //
+   // unrolled loop to write data bits
+   //
+   if bit_test(txchar,0)
+      set(*port,pin);
+   else
+      clear(*port,pin);
+   bit_delay();
+   if bit_test(txchar,1)
+      set(*port,pin);
+   else
+      clear(*port,pin);
+   bit_delay();
+   if bit_test(txchar,2)
+      set(*port,pin);
+   else
+      clear(*port,pin);
+   bit_delay();
+   if bit_test(txchar,3)
+      set(*port,pin);
+   else
+      clear(*port,pin);
+   bit_delay();
+   if bit_test(txchar,4)
+      set(*port,pin);
+   else
+      clear(*port,pin);
+   bit_delay();
+   if bit_test(txchar,5)
+      set(*port,pin);
+   else
+      clear(*port,pin);
+   bit_delay();
+   if bit_test(txchar,6)
+      set(*port,pin);
+   else
+      clear(*port,pin);
+   bit_delay();
+   if bit_test(txchar,7)
+      set(*port,pin);
+   else
+      clear(*port,pin);
+   bit_delay();
+   //
+   // stop bit
+   //
+   set(*port,pin);
+   bit_delay();
+   //
+   // char delay
+   //
+   bit_delay();
+   }
+
+	//
+	//Byte trade function.
+	//  
+void SPI_trade(char in, char *ret) {
+	
+	//
+	// unrolled bit loop to trade bytes
+	//
+
+	if (in & (1 << 7)) set(MOSI_port, MOSI_pin);
+	else clear(MOSI_port, MOSI_pin);		
+	set(SCK_port,SCK_pin);
+	if pin_test(MISO_pins,MISO_pin)  *ret |= (1 << (7));
+	clear(SCK_port,SCK_pin);
+	
+	if (in & (1 << 6)) set(MOSI_port, MOSI_pin);
+	else clear(MOSI_port, MOSI_pin);		
+	set(SCK_port,SCK_pin);
+	if pin_test(MISO_pins,MISO_pin)  *ret |= (1 << (6));		
+	clear(SCK_port,SCK_pin);
+	
+	if (in & (1 << 5)) set(MOSI_port, MOSI_pin);
+	else clear(MOSI_port, MOSI_pin);		
+	set(SCK_port,SCK_pin);
+	if pin_test(MISO_pins,MISO_pin)  *ret |= (1 << (5));		
+	clear(SCK_port,SCK_pin);
+	
+	if (in & (1 << 4)) set(MOSI_port, MOSI_pin);
+	else clear(MOSI_port, MOSI_pin);		
+	set(SCK_port,SCK_pin);
+	if pin_test(MISO_pins,MISO_pin)  *ret |= (1 << (4));		
+	clear(SCK_port,SCK_pin);
+	
+	if (in & (1 << 3)) set(MOSI_port, MOSI_pin);
+	else clear(MOSI_port, MOSI_pin);
+	set(SCK_port,SCK_pin);
+	if pin_test(MISO_pins,MISO_pin)  *ret |= (1 << (3));
+	clear(SCK_port,SCK_pin);
+	
+	if (in & (1 << 2)) set(MOSI_port, MOSI_pin);
+	else clear(MOSI_port, MOSI_pin);
+	set(SCK_port,SCK_pin);
+	if pin_test(MISO_pins,MISO_pin)  *ret |= (1 << (2));
+	clear(SCK_port,SCK_pin);
+	
+	if (in & (1 << 1)) set(MOSI_port, MOSI_pin);
+	else clear(MOSI_port, MOSI_pin);
+	set(SCK_port,SCK_pin);
+	if pin_test(MISO_pins,MISO_pin)  *ret |= (1 << (1));
+	clear(SCK_port,SCK_pin);
+	
+	if (in & (1 << 0)) set(MOSI_port, MOSI_pin);
+	else clear(MOSI_port, MOSI_pin);
+	set(SCK_port,SCK_pin);
+	if pin_test(MISO_pins,MISO_pin)  *ret |= (1 << (0));
+	clear(SCK_port,SCK_pin);
+
+}
+//
+//Function to send Write Enable
+//
+void write_enable() {
+	char dummy;
+	clear(CS_port,CS_pin);
+	SPI_trade(WRITE_ENABLE, &dummy);
+	set(CS_port,CS_pin);
+	SPI_delay();
+}
+
+//
+//Function to read status register 1
+//
+void read_status_register_1 (char *byte_ret){
+	clear(CS_port,CS_pin);
+	SPI_trade(READ_ST_REG_1, byte_ret);  //send one-byte command to read Status Register
+	SPI_trade(0x00, byte_ret);  		//send function the pointer to the variable.
+	set(CS_port,CS_pin);
+}//
+
+//
+//function to erase addresses.  Addresses must be erased before they are written.
+//
+void sector_erase (char *address_array){
+	unsigned char ind;
+	char dummy;
+	
+	clear(CS_port,CS_pin);
+	SPI_trade(SECTOR_ERASE, &dummy);
+	
+	for (ind = 0; ind < 3; ++ind) {
+		SPI_trade(address_array[ind], &dummy);
+	}
+	
+	set(CS_port,CS_pin);	
+}
+
+//
+//function to write bytes
+//
+void write_to_address(char *in_array, unsigned char nbytes, char *address_array){
+	unsigned char ind;
+	char dummy;
+	
+	clear(CS_port,CS_pin);
+	SPI_trade(WRITE_DATA, &dummy);
+	
+	for (ind = 0; ind < 3; ++ind) {
+		SPI_trade(address_array[ind], &dummy);
+	}
+	
+	for (ind = 0; ind < nbytes; ++ind) {
+		SPI_trade(in_array[ind], &dummy);
+	}
+
+	set(CS_port,CS_pin);	
+}
+//
+//function to read bytes
+//
+void read_address(char *out_array, unsigned char nbytes, char *address_array){
+	unsigned char ind;
+	char dummy;
+	
+	clear(CS_port,CS_pin);
+	SPI_trade(READ_DATA, &dummy);
+	
+	for (ind = 0; ind < 3; ++ind) {
+		SPI_trade(address_array[ind], &dummy);
+	}
+	
+	for (ind = 0; ind < nbytes; ++ind) {
+		SPI_trade(0XFF, out_array);
+		++out_array;			//index the pointer to access array element addresses.
+	}
+	
+	set(CS_port,CS_pin);	
+}
+// main
+//
+int main(void) {
+	
+	unsigned char num_bytes = 4;	//number of bytes to read/write
+	char byte_received;				//to receive a byte
+	char received_array[4];			//to receive an array of bytes from flash
+	char sent_array[4] = {6,7,8,9}; //bytes to be stored
+	char address[3] = {0,0,0};		//three-byte address
+	unsigned char ind;
+	
+	//
+	// set clock divider to /1
+	//
+	CLKPR = (1 << CLKPCE);
+	CLKPR = (0 << CLKPS3) | (0 << CLKPS2) | (0 << CLKPS1) | (0 << CLKPS0);
+	
+	//
+	// initialize output pins
+	//
+	set(serial_port,serial_pin_out);
+	output(serial_direction,serial_pin_out);
+	set(CS_port,CS_pin);
+	output(CS_direction,CS_pin);
+	output(SCK_direction,SCK_pin);
+	clear(MOSI_port,MOSI_pin);
+	output(MOSI_direction,MOSI_pin);
+	clear(MISO_direction,MISO_pin);   //set MISO pin for input
+	output(LED_direction, LED_pin);
+	
+	write_enable();			//Write enable
+
+	sector_erase(address);
+	
+	set(LED_port, LED_pin);
+	_delay_ms(400);  //maximum for tSE, sector erase time.
+	clear(LED_port, LED_pin);
+	
+	write_enable();		//Write enable.  No bytes needed.
+	//
+	read_status_register_1(&byte_received);  //Read status register 
+	//
+	
+	
+	put_char(&serial_port,serial_pin_out,byte_received);  //should read 00 after erase?
+	//
+	//write to address
+	//
+	write_to_address(sent_array, num_bytes, address);
+	
+	// main loop
+	//
+	while (1) {
+		
+		read_address(received_array, num_bytes, address);		//read address
+		
+			for (ind = 0; ind < num_bytes; ++ind) {
+				put_char(&serial_port,serial_pin_out,received_array[ind]);
+			}
+						//read addressk sending single
+			_delay_ms(500);
+		
+	}
+}

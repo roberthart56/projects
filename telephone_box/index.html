@@ -8,6 +8,21 @@
 ![pic](./Notebook.jpg)
 
 
+Now look at motor board, work on program to get and send values.
+
+analog in PB3
+serial_pin_in PB0  interrupt on this pin.
+serial_pin_out PB2
+
+###Nov. 2, 2019
+
+Modify 45.echo.interrupt.c
+
+- disable interrupt in ISR byt clearing PCI0 bit.
+- get char from serial in.
+- set up PWM for PB1, OC0B
+- set PWM duty cycle by equating OCR0B to char.
+
 
 </xmp>
 

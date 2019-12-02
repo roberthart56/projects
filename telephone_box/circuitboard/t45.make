@@ -1,4 +1,4 @@
-PROJECT=45.motor
+PROJECT=45.echo.interrupt_edited
 SOURCES=$(PROJECT).c
 MMCU=attiny45
 F_CPU = 8000000
