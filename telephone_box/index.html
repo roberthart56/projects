@@ -23,7 +23,19 @@ Modify 45.echo.interrupt.c
 - set up PWM for PB1, OC0B
 - set PWM duty cycle by equating OCR0B to char.
 
+###Dec 2019
 
+Work with gearmotors and pwm.  Problem encountered when gearmotors start up.  Motors draw enough current to pull down supply
+force micro to restart.  Doesn't help to add caps.  Add 10 Ohm in series.  This works to  keep micro alive, but drops some voltage and
+dissipates power.  Tried Jameco motor that works at higher voltage and has higher resistance.  Same issue.
+
+Next, separate micro power supply from motor supply.  Thought I tried this without success.  Try again.
+
+###Dec 4, 2019.
+
+Separating motor supply helps.  Power with 0-12V benchtop supply.  Power logic from 5V FTDI module.
+They still share ground on the board.  Use larger transistor to handle startup transients.  This seems to work reliably now.  If necessary,
+isolate grounds and use choke in line with motor ground (if necessary)?
 </xmp>
 
 
