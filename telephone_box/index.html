@@ -36,6 +36,32 @@ Next, separate micro power supply from motor supply.  Thought I tried this witho
 Separating motor supply helps.  Power with 0-12V benchtop supply.  Power logic from 5V FTDI module.
 They still share ground on the board.  Use larger transistor to handle startup transients.  This seems to work reliably now.  If necessary,
 isolate grounds and use choke in line with motor ground (if necessary)?
+
+###Jan 12, 2020.
+
+New board.  Still have problems with startups.  Even with micro isolated, using FTDI power supply, it still resets when starting
+at a low PWM fraction from a stop.
+
+### Jan 14, 2020.
+
+Better with Jameco motor.  Problem is that the gearing makes it harder to turn by hand.  May not work for box.
+
+Reliapro 253471  5V no load 60 RPM at 0.08A  Works better.  Do a faster PWM, with 2 ms period.
+Other motor from MPJA  pn 19285 MD 5V 240 RPM no load 0.16A.
+
+See if h-bridge works better.  Yes, it does.  [Code here](./ATSAM_code/samd11_hbridge01/samd11_hbridge01.ino)
+Boyoyboy I like these sams.
+
+###Jan 16, 2020
+
+Made h-bridge board with SAMD11, with 2x2 headers for USART and ADC.  Look out!  Killed a board by using 5V FTDI.
+
+Programs for ATSAMD11 are in ATSAM_code directory.
+Most success with   ATSAM_code/samd11_hbridge_03.ino which sets motor speed accoridng to difference between setpoint
+and potentiometer reading.  When pot is connected to motor, with correct sign, feedback seeks (and overshoots) the
+setpoint.
+
+
 </xmp>
 
 

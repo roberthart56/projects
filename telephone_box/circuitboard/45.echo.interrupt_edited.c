@@ -216,7 +216,8 @@ int main(void) {
    0<<WGM02: bit WGM02 remains clear, which (when combined with WGM00 and WGM01 from TCCR0A above) enables Fast PWM mode
    CS00-CS02 set prescalar, in this case /256 which makes PWM period = 256*256/8 microseconds, or 8.2 milliseconds.
    */
-   TCCR0B = 0<<WGM02 | 1<<CS02| 0<<CS01| 0<<CS00;
+   //TCCR0B = 0<<WGM02 | 1<<CS02| 0<<CS01| 0<<CS00;  // divide by 256
+   TCCR0B = 0<<WGM02 | 0<<CS02| 1<<CS01| 1<<CS00;  // divide by 64  (011) for ~2ms period.
 
    //
    // initialize output pins

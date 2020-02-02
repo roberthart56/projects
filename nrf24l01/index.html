@@ -136,6 +136,26 @@ this correctly.
 
 
 Next, trade hardware.  See if problem is in software or hardware.
+
+###Later.  Got these to talk with tiny44.  See HTMAA wesite documentation.
+
+###Jan 17, 2020.
+
+Tried to get simple xmit and receive working with Arduino Uno to no success.  Could not even taok to device.
+Using, Adafruit  ItsyBitsy M4 , was able to talk to devices, but no data transfer.  Looks like it is working.  At least it
+compiles and sends out a "fail" upon transmit.
+
+###Jan 18-21, 2020
+
+Now able to use ATSAMD11 with Arduino IDE and Mattair bootloader to communicate with radios:
+Use "ONE_UART_NO_WIRE_ONE_SPI" with pins 4,5,14,15.  Note that pin 15 is SS (=CS) and that it
+does not work if another pin is chosen as CS.
+
+Picture of wiring for M4 ItsyBitsy
+![pic]()
+
+[]
+
 </xmp>
 
 <script src="./../strapdown/strapdown.js"></script>
