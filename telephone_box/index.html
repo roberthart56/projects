@@ -1,69 +1,92 @@
 <!DOCTYPE html>
-<html>
-<title>Telephone box installation</title>
+<html lang="en">
+<head>
+  <title>Rob's Projects:  Telephone Box </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="../style.css" rel="stylesheet">
+</head>
+<body>
 
-<xmp theme="journal" style="display:none;">
-<br>
+<div class="container-fluid">
+  <h2>Project for Somerville Telephone Boxes. </h2> <br> 
+  <div class="row">
+    
+      <p> Here is an image: </p>
 
-![pic](./Notebook.jpg)
+      <img src="./Notebook.jpg" class="img-responsive margin" style="width:50%"  alt="Sew">
 
+      <p> And here is a	<a href='./index.html'>link</a>.
 
-Now look at motor board, work on program to get and send values.
+      </p>
+<p> </p>
+<p> </p>
 
-analog in PB3
-serial_pin_in PB0  interrupt on this pin.
-serial_pin_out PB2
+      <h3>Nov. 2, 2019</h3>
 
-###Nov. 2, 2019
 
 Modify 45.echo.interrupt.c
+<ul>
+  <li> disable interrupt in ISR byt clearing PCI0 bit.</li>
+ <li>- get char from serial in.</li>
+ <li>- set PWM duty cycle by equating OCR0B to char.</li>
 
-- disable interrupt in ISR byt clearing PCI0 bit.
-- get char from serial in.
-- set up PWM for PB1, OC0B
-- set PWM duty cycle by equating OCR0B to char.
+</ul>
 
-###Dec 2019
+ <h3>Dec 2019</h3>
 
-Work with gearmotors and pwm.  Problem encountered when gearmotors start up.  Motors draw enough current to pull down supply
-force micro to restart.  Doesn't help to add caps.  Add 10 Ohm in series.  This works to  keep micro alive, but drops some voltage and
-dissipates power.  Tried Jameco motor that works at higher voltage and has higher resistance.  Same issue.
 
-Next, separate micro power supply from motor supply.  Thought I tried this without success.  Try again.
+<p> Work with gearmotors and pwm.  Problem encountered when gearmotors start up.  Motors draw enough current to pull down supply</p>
+<p> force micro to restart.  Doesn't help to add caps.  Add 10 Ohm in series.  This works to  keep micro alive, but drops some voltage and
+dissipates power.  Tried Jameco motor that works at higher voltage and has higher resistance.  Same issue.</p>
 
-###Dec 4, 2019.
+<p> Next, separate micro power supply from motor supply.  Thought I tried this without success.  Try again.</p>
 
-Separating motor supply helps.  Power with 0-12V benchtop supply.  Power logic from 5V FTDI module.
-They still share ground on the board.  Use larger transistor to handle startup transients.  This seems to work reliably now.  If necessary,
-isolate grounds and use choke in line with motor ground (if necessary)?
 
-###Jan 12, 2020.
+ 
+<h3>Dec 4, 2019</h3>
 
-New board.  Still have problems with startups.  Even with micro isolated, using FTDI power supply, it still resets when starting
-at a low PWM fraction from a stop.
 
-### Jan 14, 2020.
+<p>Separating motor supply helps.  Power with 0-12V benchtop supply.  Power logic from 5V FTDI module.</p>
+<p>They still share ground on the board.  Use larger transistor to handle startup transients.  </p>
+<p>This seems to work reliably now.  If necessary, isolate grounds and use choke in line with motor ground (if necessary)?</p>
 
-Better with Jameco motor.  Problem is that the gearing makes it harder to turn by hand.  May not work for box.
+<h3>Jan 12, 2020.</h3>
 
-Reliapro 253471  5V no load 60 RPM at 0.08A  Works better.  Do a faster PWM, with 2 ms period.
-Other motor from MPJA  pn 19285 MD 5V 240 RPM no load 0.16A.
+<p>New board.  Still have problems with startups.  Even with micro isolated, using FTDI power supply, it still resets when starting
+at a low PWM fraction from a stop.</p>
 
-See if h-bridge works better.  Yes, it does.  [Code here](./ATSAM_code/samd11_hbridge01/samd11_hbridge01.ino)
-Boyoyboy I like these sams.
+<h3>Jan 14, 2020.</h3>
 
-###Jan 16, 2020
+<p>Better with Jameco motor.  Problem is that the gearing makes it harder to turn by hand.  May not work for box.</p>
+
+<p>Reliapro 253471  5V no load 60 RPM at 0.08A  Works better.  Do a faster PWM, with 2 ms period.
+Other motor from MPJA  pn 19285 MD 5V 240 RPM no load 0.16A.</p>
+
+
+<p>See if h-bridge works better.  Yes, it does. <a href='./ATSAM_code/samd11_hbridge01/samd11_hbridge01.ino'>Code here</a> 
+Boyoyboy I like these sams.</p>
+
+<h3>Jan 16, 2020</h3>
 
 Made h-bridge board with SAMD11, with 2x2 headers for USART and ADC.  Look out!  Killed a board by using 5V FTDI.
 
-Programs for ATSAMD11 are in ATSAM_code directory.
-Most success with   ATSAM_code/samd11_hbridge_03.ino which sets motor speed accoridng to difference between setpoint
+<p><p>Programs for ATSAMD11 are in ATSAM_code directory.</p>
+<p>Most success with  <a href='./ATSAM_code/samd11_hbridge_03/samd11_hbridge_03.ino'>samd11_hbridge_03.ino</a>
+which sets motor speed accoridng to difference between setpoint
 and potentiometer reading.  When pot is connected to motor, with correct sign, feedback seeks (and overshoots) the
-setpoint.
+setpoint.</p>
 
+   
+  </div>
+<a href='xx'>tt</a>
+ 
+  
+  
+</div>
 
-</xmp>
-
-
-<script src="./../strapdown/strapdown.js"></script>
+</body>
 </html>
