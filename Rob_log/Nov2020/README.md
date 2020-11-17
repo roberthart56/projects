@@ -1,10 +1,17 @@
-# biggest
+# Nov 2020
 
-## title
+Let's try this as a logging process.  Link to other sites and projecgts. Keep track of life.
 
-#### smalleer?
 
-This is the readme.
-- lkj
-- lkj
+### Nov 17
+
+**At Science Center**
+- Replaced wide belts on Clank with 6mm belts, and added somemissing bearings.
+- Glued a stack of plywood and Garolite bottom for a new saddle.
+- Brought Pi2B home.  Try to load it up with
+  - pyUPDI
+  - pyOCD
+  - Arduino IDE for Arduino UPDI
+  - AVR crosspack toolchain.
+  
 
