@@ -446,6 +446,49 @@ Projects for next weeks.
 [here's the ATSAMD11c14 arduino pinout](https://github.com/mattairtech/ArduinoCore-samd/blob/master/variants/Generic_D11C14A/README.md)
 
 
+
+
+###Oct. 21, 2020
+
+####Email from Haystack re Fab Academy.
+
+####  Notes on fab class staff meeting, review of Electronics design, lecture on programming.
+
+Fab academy belgium student made SAMD11 UPDI programmer:  [quentin-bolsee](http://fabacademy.org/2020/labs/ulb/students/quentin-bolsee/assignments/week09/)
+
+Fabcloud hello-worlds.  Where?
+
+I now have fab.io access, which gets to https://gitlab.fabcloud.org/ which is the Fab Academy site.
+
+https://www.media.mit.edu/people/alims/overview/  Ali Starbanov was the student last year who developed a flow module.
+
+Good documentation from Omar on machine running.
+
+Looks like Eagle now does not offer a non-connected version.  Not sure how to export images.
+
+###Oct. 23, 2020
+
+Serial on Arduino core for t412.
+
+Use Neil's echo code.  Arduino 1.8.12.  Konde Mega tiny core 2.1.3.  Serial TX appears on pin 2.
+Looks like from Konde [page](https://github.com/SpenceKonde/megaTinyCore/blob/master/megaavr/extras/ATtiny_x12.md) that
+current version of the core sets UART on physical pins 2/3.  To use with (physical) pins 4/5, call Serial.swap(1).
+So [this](hello.t412.echo.swapped.ino) modification works with Neil's board example.
+
+###Oct 26, 2020
+
+The documentation on the 412 counter timer is good.  See [getting started](http://ww1.microchip.com/downloads/en/AppNotes/TB3217-Getting-Started-with-TCA-90003217A.pdf) note from
+Microchip.
+
+###Nov. 2, 2020
+
+Work on saddle trap documentation. [here]
+
+###Nov. 4,2020
+
+[Tutorial on Eagle library part creation:](https://learn.sparkfun.com/tutorials/designing-pcbs-smd-footprints/all)
+
+
 </xmp>
 
 
