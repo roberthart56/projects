@@ -14,6 +14,12 @@ We (i.e. Neil and his students) introduced two families of microcontroller start
   * Programming with MAX32625PICO and pyOCD.
   
   ## Details
-   1. Arduino Programmer:
-    1. [instructions]((https://github.com/SpenceKonde/megaTinyCore/blob/master/MakeUPDIProgrammer.md)
-    1. [Comments on proper choiceofUPDI programming resistor:](https://github.com/SpenceKonde/AVR-Guidance/blob/master/HardwareNotes/UPDISeriesResistors.md)  
+1. Arduino Programmer:
+   1. [instructions]((https://github.com/SpenceKonde/megaTinyCore/blob/master/MakeUPDIProgrammer.md)
+   1. [Comments on proper choiceofUPDI programming resistor:](https://github.com/SpenceKonde/AVR-Guidance/blob/master/HardwareNotes/UPDISeriesResistors.md)  
+## aomething else
+1. Item 1
+1. Item 2
+1. Item 3
+   1. Item 3a
+   1. Item 3b
