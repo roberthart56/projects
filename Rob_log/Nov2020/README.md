@@ -17,6 +17,7 @@ Let's try this as a logging process.  Link to other sites and projects. Keep tra
 ### Nov 18
 
 **At home**
-
+ - work on programming tutorial for new HTMAA micros:  https://github.com/roberthart56/projects/edit/master/Programming_Nov_2020
+ - 
 
 ### Nov 19
