@@ -15,9 +15,10 @@ We (i.e. Neil and his students) introduced two families of microcontroller start
   
   ## Details
 1. Arduino Programmer:
-   1. [instructions]((https://github.com/SpenceKonde/megaTinyCore/blob/master/MakeUPDIProgrammer.md)
+   1. [instructions](https://github.com/SpenceKonde/megaTinyCore/blob/master/MakeUPDIProgrammer.md)
    1. [Comments on proper choiceofUPDI programming resistor:](https://github.com/SpenceKonde/AVR-Guidance/blob/master/HardwareNotes/UPDISeriesResistors.md)  
-## aomething else
+
+## something else
 1. Item 1
 1. Item 2
 1. Item 3
