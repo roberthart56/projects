@@ -6,18 +6,22 @@ Let's try this as a logging process.  Link to other sites and projects. Keep tra
 ### Nov 17
 
 **At Science Center**
-- Replaced wide belts on Clank with 6mm belts, and added some missing bearings.
-- Glued a stack of plywood and Garolite bottom for a new [saddle.](https://roberthart56.github.io/SCFAB/SC_lab/Projects/rotating_saddle/index.html)
-- Brought Pi2B home.  Try to load it up with, and document:
-  - pyUPDI
-  - pyOCD
-  - Arduino IDE for Arduino UPDI
-  - AVR crosspack toolchain.
+* Replaced wide belts on Clank with 6mm belts, and added some missing bearings.
+* Glued a stack of plywood and Garolite bottom for a new [saddle.](https://roberthart56.github.io/SCFAB/SC_lab/Projects/rotating_saddle/index.html)
+* Brought Pi2B home.  Try to load it up with, and document:
+  * pyUPDI
+  * pyOCD
+  * Arduino IDE for Arduino UPDI
+  * AVR crosspack toolchain.
 
 ### Nov 18
 
 **At home**
  - work on programming tutorial for new HTMAA micros:  https://github.com/roberthart56/projects/edit/master/Programming_Nov_2020
- - 
+ - Download phone and google drive pictures and videos.
 
 ### Nov 19
+
+###Nov20
+
+
