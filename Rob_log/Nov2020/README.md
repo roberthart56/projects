@@ -21,7 +21,22 @@ Let's try this as a logging process.  Link to other sites and projects. Keep tra
  - Download phone and google drive pictures and videos.
 
 ### Nov 19
+ - work a bit on website for makerspace.
 
-###Nov20
+### Nov 20 in lab
+ - Clank - nothing done
+ - saddle.  Faced off bottom.
+ - Daniel.  not in.
+ - SEAS stuff.  worked with Daniel Davis.  More Monday 8AM.
+ 
+### Nov. 21 Sat.
+ - [Broth making.](https://github.com/roberthart56/projects/blob/master/Cooking/README.md)
+ 
+ 
+### Nov. 23.
+ - move bandsaw, parts boxes, and other stuff from SEAS ALL.
+ 
+ 
+ 
 
 
