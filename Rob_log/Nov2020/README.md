@@ -35,8 +35,11 @@ Let's try this as a logging process.  Link to other sites and projects. Keep tra
  
 ### Nov. 23.
  - move bandsaw, parts boxes, and other stuff from SEAS ALL.
+ - Dentist for tooth repair.
  
- 
+###  Nov 24.
+- [c++ book](https://learning-oreilly-com.ezp-prod1.hul.harvard.edu/library/view/A+Tour+of+C++,+2nd+Edition/9780134998053/ch01.xhtml#ch01lev2sec5) in Harvard library.  A tour of c++, 2nd Edition.
+- 
  
 
 
