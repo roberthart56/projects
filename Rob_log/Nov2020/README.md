@@ -41,5 +41,6 @@ Let's try this as a logging process.  Link to other sites and projects. Keep tra
 - [c++ book](https://learning-oreilly-com.ezp-prod1.hul.harvard.edu/library/view/A+Tour+of+C++,+2nd+Edition/9780134998053/ch01.xhtml#ch01lev2sec5) in Harvard library.  A tour of c++, 2nd Edition.
 - Trying to digest and understand Jake's Clank code.  I would like to use this, and to make a Fabbable Clank/controller.
  
+###  Nov 25.  
 
-
+ - [Pie shells.](https://github.com/roberthart56/projects/blob/master/Cooking/README.md)
