@@ -44,3 +44,8 @@ Let's try this as a logging process.  Link to other sites and projects. Keep tra
 ###  Nov 25.  
 
  - [Pie shells.](https://github.com/roberthart56/projects/blob/master/Cooking/README.md)
+ 
+ ###  Nov 26-7. Thanksgiving.
+ 
+ - Canning with Chris.  [Notes](
+ - Pollinator handbook:
