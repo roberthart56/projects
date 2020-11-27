@@ -10,7 +10,7 @@ Batch for quantity calibration:
  - 6 clove garlic.
 Roast at 350. 2 hr.  Add 3.5 quarts water and simmer 3 hr.
 
-**Salt Rising Bread.  [recipe](./salt_rising.png)
+**Salt Rising Bread.  [recipe](./salt_rising.png)**
  
 ### Nov 25.  Pies
 
