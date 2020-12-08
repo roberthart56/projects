@@ -49,3 +49,5 @@ Let's try this as a logging process.  Link to other sites and projects. Keep tra
  
  - Canning with Chris.  [Notes](https://github.com/roberthart56/projects/tree/master/Canning)
  - Pollinator handbook:https://www.nrcs.usda.gov/Internet/FSE_DOCUMENTS/nrcs142p2_010204.pdf
+
+ ###  [notes for Dec 2020](../Dec2020)
