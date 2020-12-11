@@ -16,3 +16,14 @@
 Take data with saddle - new surface, slghtly negative overall potential.
 
 Plot and compare two bare-wood surfaces.   Little difference.  [Notes](https://github.com/roberthart56/SCFAB/tree/master/SC_lab/Projects/rotating_saddle)
+
+### Dec 7- Dec 10
+
+Work on PS70 kits.  Inventory, purchases, planning.
+Work on saddle.  Dec. 10, study friction effects, using lubricant.  Use Steel ball.
+Learning to use Python, getting ready to be rid of Mac!  
+Ooni oven is on the way.  Clavichord uncertain.
+
+### Dec 11
+
+lab meeting:  Melissa asks for summary of lessons learned.  On Slack?
