@@ -3,8 +3,8 @@
 Worked on Barbara's vials, installing a red LED in one.  Here are some notes:
  * Used Dad's tiny manipulating tools and his microscope.
  * Made soldering jig from Oomoo25. Great idea, but need stiffer material.  Probably sacrifice a cooking utensil!
- * Soldering easier than expected.  Used small tip.
- * inject with 1.2mm needle.
+ * Soldering easier than expected.  Used small tip.  No extra flux.
+ * inject with 1.2mm needle.   Pull LED and wires into needle from tip side.  When needle is inserted, push wires in, and withdraw needle.
  * 100 Ohm resistor in series gives approx 30mA, the maximum specced current for this LED. (0402, Digikey 732-11991-1).
  
 ![LED in vial](./vial_led.jpg)
