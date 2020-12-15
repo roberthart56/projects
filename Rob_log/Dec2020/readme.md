@@ -27,3 +27,8 @@ Ooni oven is on the way.  Clavichord uncertain.
 ### Dec 11
 
 lab meeting:  Melissa asks for summary of lessons learned.  On Slack?
+
+### Dec 15
+
+Worked on Barbara's vials, installing a red LED in one.  Here are some [notes](../
+ 
