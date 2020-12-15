@@ -1,30 +1,9 @@
-# Cooking and recipes
+# Injecting light into vials.  
 
-### Nov 21.  Broth
-
-Batch for quantity calibration:
- - 4.5 lb chicken backs
- - 1/2 lb celery
- - 3/4 lb onion (2).
- - 1/2 lb carrot
- - 6 clove garlic.
-Roast at 350. 2 hr.  Add 3.5 quarts water and simmer 3 hr.
-
-**Salt Rising Bread.  [recipe](./salt_rising.png)**
- 
-### Nov 25.  Pies
-
-Pastry for pumpkin chiffon pie
- - Chill butter and crisco.
- - 1:2.25 shortening:flour for prebaked shell.
- - work by hand into flakes.
- - Add 4T water per 2.25C flour.
- - Chill dough.
- - Roll on beeswax cloth.
- - Keep as high as possible.
- - prick.
- - Chill in freezer.  
- - Foil and salt 15 min. 
- - uncover, 425, 15 min 375.
- 
+Worked on Barbara's vials, installing a red LED in one.  Here are some notes:
+ * Used Dad's tiny manipulating tools and his microscope.
+ * Made soldering jig from Oomoo25. Great idea, but need stiffer material.  Probably sacrifice a cooking utensil!
+ * Soldering easier than expected.  Used small tip.
+ * inject with 1.2mm needle.
+ * 100 Ohm resistor in series gives approx 30mA, the maximum specced current for this LED. (0402, Digikey 732-11991-1).
  
