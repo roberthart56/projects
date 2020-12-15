@@ -30,5 +30,5 @@ lab meeting:  Melissa asks for summary of lessons learned.  On Slack?
 
 ### Dec 15
 
-Worked on Barbara's vials, installing a red LED in one.  Here are some [notes](../
+Worked on Barbara's vials, installing a red LED in one.  Here are some [notes](../../Vial_lights)
  
