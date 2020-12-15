@@ -30,6 +30,7 @@ lab meeting:  Melissa asks for summary of lessons learned.  On Slack?
 
 ### Dec 15
 
-Worked on Barbara's vials, installing a red LED in one.  Here are some [notes](../../Vial_lights)
-Especailly nice to work with Dad's microscope and to use his tiny Collembola-manipulating tools.  Feeling like my life has some parallels with his, and some follow-on as well.
+Worked on Barbara's vials, installing a red LED in one.  Here are some [notes](../../Vial_lights).  
+
+Especially nice to work with Dad's microscope and to use his tiny Collembola-manipulating tools.  Feeling like my life has some parallels with his, and some follow-on as well.
 
