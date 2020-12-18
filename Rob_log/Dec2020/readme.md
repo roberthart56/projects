@@ -34,3 +34,4 @@ Worked on Barbara's vials, installing a red LED in one.  Here are some [notes](.
 
 Especially nice to work with Dad's microscope and to use his tiny Collembola-manipulating tools.  Feeling like my life has some parallels with his, and some follow-on as well.
 
+
