@@ -11,7 +11,10 @@ To get to virtual environment, type "source ~/Jupyter/Jupyter_env/bin/activate".
 
 ## Set up MacBook Pro (mid 2012) with 20.04.
 
-12/25/20.   Can I get wireless working? Not working on Ken's current installation of Ubuntu 18.04.
+12/25/20.  12/26/20 
 
  * Follow instructions [here](https://ubuntu.com/tutorials/create-a-usb-stick-on-macos#1-overview) to create bootable usb on Mac.
- * 
+ * Got wireless working by choosing network at start and/or checking box to install proprietary drivers during installation dialog.
+ * update, then upgrade.  Probably want 'apt-get dist-upgrade'
+ * Neil's installation scripts [here](http://academy.cba.mit.edu/classes/project_management/scripts/Ubuntu_20.04)
+ 
