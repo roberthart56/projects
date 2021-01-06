@@ -20,7 +20,7 @@ I sent this off to Barbara, attached to a stiff cardboard backing, with USB conn
 
 Put together a prototype ornament, making progress on soldering and placing LEDs in vials.
 
- * Remove insulation from thin enamalled wire using abrasive paper pieces.  About 400 grit works well.  Rub paper together, rotating wire between and abrading enamel.  This seems cleaner than burning.  Wire gauge is 47?  Diameter 0.004".  This is about what's needed since needle bore is ~ 1mm = 0.040"  LEDs are size 0402 (0.040"x0.020").
+ * Remove insulation from thin enamalled wire using abrasive paper pieces.  About 400 grit works well.  Rub paper together, rotating wire between and abrading enamel.  This seems cleaner than burning.  Wire gauge is 47?  Diameter 0.004".  This is about what's needed since needle bore is ~ 0.75mm = 0.030"  LEDs are size 0402 (0.040"x0.020").  Of course, this would all be easier with a larger needle, but I think that might be missing the point, whatever it is. [sic]
 
 ![solder jig](./enamel_removal.jpg)
  
