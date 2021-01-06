@@ -12,6 +12,10 @@ Worked on Barbara's vials, installing a red LED in one.  Here are some notes:
 
 ![solder jig](./solder_jig.jpg)
 
+I sent this off to Barbara, attached to a stiff cardboard backing, with USB connector soldered.  Very delicate since wires are not strain-relieved.  Hope it survives the trip.
+
+
+
 ### Before and after Christmas.  Dec 23 - Jan. 6 2021.
 
 Put together a prototype ornament, making progress on soldering and placing LEDs in vials.
