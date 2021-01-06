@@ -18,3 +18,7 @@ To get to virtual environment, type "source ~/Jupyter/Jupyter_env/bin/activate".
  * update, then upgrade.  Probably want 'apt-get dist-upgrade'
  * Neil's installation scripts [here](http://academy.cba.mit.edu/classes/project_management/scripts/Ubuntu_20.04)
  
+ 1/6/21
+ 
+ * Generate an ssh key on the laptop, using 'ssh-keygen -t rsa'.  The public key will be stored in Github.  The private key stays in ~/.ssh/id_rsa
+ * 
