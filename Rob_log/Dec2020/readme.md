@@ -1,5 +1,5 @@
 
-### Back to [Nov 2020 notes](../Nov2020)
+### Back to [Nov 2020 notes](../Nov2020)  or  Forward to [Jan 2021 notes](../Jan2021)
 
 # Dec 2020
 
