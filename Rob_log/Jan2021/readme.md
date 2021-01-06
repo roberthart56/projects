@@ -1,37 +1,26 @@
 
-### Back to [Nov 2020 notes](../Nov2020)
+### Back to [Dec 2020 notes](../Dec2020)
 
-# Dec 2020
+# Jan 2021
 
 
- ### Dec 7
+ ### Jan 4
+
+Worked on Saddle project, making new launcher, and smoothing new epoxied wood surface.
+Contact with David Selles at Possible Project.
+
+ ### Jan 5
  
- Work with Nathan on PS70 Orders
+Talked with Louis about saddles. Notes here about what I need to do next.  Close to getting data for paper??
+https://github.com/roberthart56/SCFAB/tree/master/SC_lab/Projects/rotating_saddle  
+
+Pizza oven, using gas still, and Hamelman crust with less kneading and long cold ferments.  Better results. 
+
+Plan to work wih Neil's machine class this spring.
+
+Run around Fresh Pond -  seven miles?
+
+ ### Jan 6
  
- Start changover to Ubuntu:
- - Clone some repos.
- - Install Jupyter notebook.  [notes](../../Ubuntu_setup_2020/)
- - Jupyter notebook is in virtual environment.
+ Document LEDs in vials [here](https://github.com/roberthart56/projects/tree/master/Vial_lights).
  
-Take data with saddle - new surface, slghtly negative overall potential.
-
-Plot and compare two bare-wood surfaces.   Little difference.  [Notes](https://github.com/roberthart56/SCFAB/tree/master/SC_lab/Projects/rotating_saddle)
-
-### Dec 7- Dec 10
-
-Work on PS70 kits.  Inventory, purchases, planning.
-Work on saddle.  Dec. 10, study friction effects, using lubricant.  Use Steel ball.
-Learning to use Python, getting ready to be rid of Mac!  
-Ooni oven is on the way.  Clavichord uncertain.
-
-### Dec 11
-
-lab meeting:  Melissa asks for summary of lessons learned.  On Slack?
-
-### Dec 15
-
-Worked on Barbara's vials, installing a red LED in one.  Here are some [notes](../../Vial_lights).  
-
-Especially nice to work with Dad's microscope and to use his tiny Collembola-manipulating tools.  Feeling like my life has some parallels with his, and some follow-on as well.
-
-
