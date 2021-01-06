@@ -29,11 +29,11 @@ Put together a prototype ornament, making progress on soldering and placing LEDs
  
  ![pic](./LED-in_needle.jpg)
  
- * And a picture of the ornament
+ * And a picture of the ornament. 
  
  ![pic](./Ornament.jpg)
  
-  * Picture of the ornament and its board and battery.  Used an Arduino micro (A 328 with USB) with an Adafruit 350 mA-hour LiPo battery.  Requires a 3.7 Volt charger, shown alongside in the picture.  I attempted to use shrink tube to protect four LED wires. Resistors are 100 ohm - could be tweaked for two colors to tradeoff brightness and battery time.  I could make a microcontroller board smaller than the battery pack, possibly with charger included.  I'd use a tiny412.  Not sure this is worthwhile, since the leads are so delicate that the ornament will probably not last. 
+  * Picture of the ornament and its board and battery.  There are two LEDs - red and green.  Used an Arduino micro (A 328 with USB) with an Adafruit 350 mA-hour LiPo battery.  Requires a 3.7 Volt charger, shown alongside in the picture.  I attempted to use shrink tube to protect four LED wires. Resistors are 100 ohm - could be tweaked for two colors to tradeoff brightness and battery time.  I could make a microcontroller board smaller than the battery pack, possibly with charger included.  I'd use a tiny412.  Not sure this is worthwhile, since the leads are so delicate that the ornament will probably not last. 
  
  ![pic](./ornament_board.jpg)
  
