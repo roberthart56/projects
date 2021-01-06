@@ -21,5 +21,5 @@ To get to virtual environment, type "source ~/Jupyter/Jupyter_env/bin/activate".
  1/6/21
  
  * Generate an ssh key on the laptop, using 'ssh-keygen -t rsa'.  The public key will be stored in Github.  The private key stays in ~/.ssh/id_rsa
- * 
- Change again
+ * Github still asks for username when I push.  Maybe it takes time?
+ 
