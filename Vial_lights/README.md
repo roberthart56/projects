@@ -24,7 +24,7 @@ Put together a prototype ornament, making progress on soldering and placing LEDs
 
 ![solder jig](./enamel_removal.jpg)
  
- * As a clamp, use part of a silicone soldering mat from the HTMAA kit 2020.  this is stiffer than the oomoo25, and holds parts and wires for soldering.  Manipulate with tweezers under microscope.  A better rig could be made, allowing more controlled placement.  Use hot air rework tool from HTMAA kit soldering station for heating parts to tin with solder.  Then juxtapose and use small soldering tip to fuse the LED and wire together.  It works with some practice.  Not easy, but I can now solder a couple in an hour.
+ * As a clamp, use part of a silicone soldering mat from the HTMAA kit 2020.  this is stiffer than the oomoo25, and holds parts and wires for soldering.  Manipulate with tweezers under microscope.  A better rig could be made, allowing more controlled placement.  Use hot air rework tool from HTMAA kit soldering station for heating parts to tin with solder.  Then juxtapose and use small soldering tip to fuse the LED and wire together.  It works with some practice.  Not easy, but I can now solder a couple in an hour.  A better approach may be to use soldering paste, put it all together in a specialized silicone jig, and solder with hot air.
 
 ![pic](./clamp.jpg)
 
