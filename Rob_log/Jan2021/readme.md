@@ -24,3 +24,8 @@ Run around Fresh Pond -  seven miles?
  
  Document LEDs in vials [here](https://github.com/roberthart56/projects/tree/master/Vial_lights).
  
+ ### Jan 7
+ 
+ Measure saddle height(x,y) for four saddles.   Next, get python scripts working to extract parameters.  Then mount and measure.
+ 
+ Talked with David Selles about Possible Project.  Makerspace coming up next summert.  Fab Academy soon?
