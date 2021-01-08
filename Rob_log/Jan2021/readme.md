@@ -29,3 +29,7 @@ Run around Fresh Pond -  seven miles?
  Measure saddle height(x,y) for four saddles.   Next, get python scripts working to extract parameters.  Then mount and measure.
  
  Talked with David Selles about Possible Project.  Makerspace coming up next summert.  Fab Academy soon?
+
+ ### Jan 8
+ 
+ Set up Jupyter notebook on MacBook Ubuntu.  Learn some more python to fit curves and correct for measurement tool radius.
