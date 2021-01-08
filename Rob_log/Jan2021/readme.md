@@ -24,6 +24,8 @@ Run around Fresh Pond -  seven miles?
  
  Document LEDs in vials [here](https://github.com/roberthart56/projects/tree/master/Vial_lights).
  
+ Dinner in Ooni since oven was not behaving.  Veggies roasted and salmon charred.  Wood and charcoal give good control, but pretty fast burning to keep hot.
+ 
  ### Jan 7
  
  Measure saddle height(x,y) for four saddles.   Next, get python scripts working to extract parameters.  Then mount and measure.
