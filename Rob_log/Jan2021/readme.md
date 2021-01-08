@@ -32,4 +32,7 @@ Run around Fresh Pond -  seven miles?
 
  ### Jan 8
  
- Set up Jupyter notebook on MacBook Ubuntu.  Learn some more python to fit curves and correct for measurement tool radius.
+ Set up Jupyter notebook on MacBook Ubuntu.  Learn some more python to fit curves and correct for measurement tool radius.  Will document in link above.
+ 
+ Attend MAS865 meeting (How to make something that makes....).  notes [here](https://github.com/roberthart56/projects/blob/master/Machines2021/README.md)
+ 
