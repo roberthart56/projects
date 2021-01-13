@@ -23,3 +23,22 @@ To get to virtual environment, type "source ~/Jupyter/Jupyter_env/bin/activate".
  * Generate an ssh key on the laptop, using 'ssh-keygen -t rsa'.  The public key will be stored in Github.  The private key stays in ~/.ssh/id_rsa
  * Github still asks for username when I push.  Maybe it takes time?
  
+ 1/13/21
+ 
+ Wireless was not working.  Re-installed Ubuntu, and it still did not work.  Followed this suggestion:  From  https://askubuntu.com/questions/1305699/bcmwl-kernel-source-broken-on-kernel-5-8-0-34-generic
+
+"The reason is obvious. Almost every time Canonical rolls out a HWE kernel, they forget to upgrade bcmwl-kernel-source in the repos.
+
+You have two solutions (use one or the other, it makes no sense to use both):
+
+    Install bcmwl-kernel-source from groovy repos. You can find it e.g. here. http://mirrors.kernel.org/ubuntu/pool/restricted/b/bcmwl/bcmwl-kernel-source_6.30.223.271+bdcom-0ubuntu7_amd64.deb It will compile with the 5.8 kernel.
+
+Download the deb and install it by
+
+sudo dpkg -i bcmwl-kernel-source_6.30.223.271+bdcom-0ubuntu7_amd64.deb.
+
+This seems to work.
+
+Now reinstall everything!
+KiCad, Freecad, Chrome, magick, inkscape, gimp, 
+
