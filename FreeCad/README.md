@@ -21,4 +21,4 @@ tutorial [here](https://wiki.freecadweb.org/Basic_Part_Design_Tutorial_017)
 
 file [here](./Tutorial_02.FCStd)
 
-Parametric design using internal spreadsheet.  File is [here](./parametric_001)
+Parametric design using internal spreadsheet.  File is [here](./parametric_001.FCStd)
