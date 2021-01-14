@@ -22,3 +22,10 @@ tutorial [here](https://wiki.freecadweb.org/Basic_Part_Design_Tutorial_017)
 file [here](./Tutorial_02.FCStd)
 
 Parametric design using internal spreadsheet.  File is [here](./parametric_001.FCStd)
+
+* Can add references to cells in data tab on Combo view, once spreadsheet is made.* Nice
+* Can enter references directly into dimension dialogs.
+* can refer to cells by address (B2, etc) or by alias
+
+FreeCad Wiki  [here](https://wiki.freecadweb.org/) includes 'manual'
+
