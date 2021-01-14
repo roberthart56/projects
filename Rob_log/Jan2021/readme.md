@@ -38,3 +38,10 @@ Run around Fresh Pond -  seven miles?
  
  Attend MAS865 meeting (How to make something that makes....).  notes [here](https://github.com/roberthart56/projects/blob/master/Machines2021/README.md)
  
+ ### Jan 11-13
+ 
+ Work on Saddle data with P2 and P3.  Reload MacBook with Ubuntu20 and install new driver.
+ 
+ ### Jan 14
+ 
+Learn a good deal about FreeCad.  I like the Python and the community.  Pretty functional.  
