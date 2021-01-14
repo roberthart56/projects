@@ -25,7 +25,8 @@ Parametric design using internal spreadsheet.  File is [here](./parametric_001.F
 
 * Can add references to cells in data tab on Combo view, once spreadsheet is made.* Nice
 * Can enter references directly into dimension dialogs.
-* can refer to cells by address (B2, etc) or by alias
+* can refer to cells by address (B2, etc) or by alias 
+* For good documentation, see [here](https://wiki.freecadweb.org/Spreadsheet_Workbench)
 
 FreeCad Wiki  [here](https://wiki.freecadweb.org/) includes 'manual'
 
