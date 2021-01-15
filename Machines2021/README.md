@@ -17,3 +17,9 @@ Ideas include:
 * Neil using Operating system (eg Python in Pi4) to send bits to simple drivers for machines.
 * Jake fabbing boards for Clank.
 * Zack Exploring Nitinol.
+
+### Jan 15
+
+Received an Ender3 Creality printer.  Start a Folder for that documentation [here](./Ender3/README.md)
+
+
