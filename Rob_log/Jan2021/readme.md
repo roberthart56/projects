@@ -45,3 +45,14 @@ Run around Fresh Pond -  seven miles?
  ### Jan 14
  
 Learn a good deal about FreeCad.  I like the Python and the community.  Pretty functional.  
+
+### Jan 15-17
+
+Still much to figure out about Freecad.  I think it may be secondary to Fusion for complex things.
+
+###  Jan 18
+
+[Orange marmalade.](../../Cooking/README.md)
+Repair Food processor bowl.  [Documentation](../../home/food
+Progress on saddles.
+
