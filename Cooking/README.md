@@ -31,9 +31,9 @@ Pastry for pumpkin chiffon pie
 
 Second batch of Orange marmalade:
 
-~2 lb oranges, zest and flesh (discard pith) to make 800g product.
-2 lemons, same treatment
-2C sugar
-2C water
+* ~2 lb oranges, zest and flesh (discard pith) to make 800g product.
+* 2 lemons, same treatment
+* 2C sugar
+* 2C water
 
 Cook to desired stage.  I had no luck measuring temp with any probes that I have.  Stopped when the texture seemed right and the mixture set on a cold plate.  Better to use metal surface than cold plate!  I may have taken this too far.  Next time take out samples to cool as setting temp is approached.  This quantity made 1.5 pints.  Gotta love the mixed units.
