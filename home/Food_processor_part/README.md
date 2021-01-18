@@ -1,6 +1,6 @@
 # Food processor repair
 
-Part designed in FreeCad.  [Freecad file](./food_proc_001.FCStd)
+January 2021.  Part designed in FreeCad.  [Freecad file](./food_proc_001.FCStd)
 
 Other files are in this folder:  stl, Prusa project, Prusa g-code.
 
