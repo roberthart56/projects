@@ -1,3 +1,5 @@
-# projects
-rob's projects and log.  Modify.
+# Knitting
+
+###Glove notes
+
 
