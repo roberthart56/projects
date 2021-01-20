@@ -42,3 +42,8 @@ This seems to work.
 Now reinstall everything!
 KiCad, Freecad, Chrome, magick, inkscape, gimp, 
 
+1/20/21
+
+Here is a good VIM tutorial! : https://www.linux.com/training-tutorials/vim-101-beginners-guide-vim/
+
+
