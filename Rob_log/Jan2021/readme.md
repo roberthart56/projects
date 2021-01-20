@@ -58,3 +58,18 @@ Repair Food processor bowl.  [Documentation](../../home/food
 
 Progress on saddles.
 
+
+###  Jan 19
+
+Took data to complete dataset for four plastic saddles.  The points seem to fit.  We'll see what's next.
+
+
+
+###  Jan 20
+
+Learned VIM a bit.  Could be useful.
+
+
+
+
+
