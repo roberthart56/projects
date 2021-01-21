@@ -68,7 +68,11 @@ Took data to complete dataset for four plastic saddles.  The points seem to fit.
 ###  Jan 20
 
 Learned VIM a bit.  Could be useful.
+Worked on Ender3.  Installed new fittings.  Made first print.
 
+###  Jan 21
+
+Work on plotting saddle data in matplotlib.
 
 
 
