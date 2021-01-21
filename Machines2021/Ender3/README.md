@@ -14,4 +14,5 @@ Received Ender3.
   
 * Tube connectors are not great.  So far, I cannot get them to hold the tube on the extruder motor end, although the het end one seems to work.    [Amazon link to replacement parts](https://amzn.to/2JXDcvX)  I ordered a set of these.  
 
-* Issues on getting hot end clogged and gap between tube and nozzle, related to poor quaility couplers. [Video here](https://www.youtube.com/watch?v=30qqKUwviww)
+* Issues on getting hot end clogged and gap between tube and nozzle, related to poor quaility couplers.
+ [Video here](https://www.youtube.com/watch?v=30qqKUwviww)
