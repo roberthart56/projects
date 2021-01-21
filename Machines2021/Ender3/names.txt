@@ -1,0 +1,6 @@
+box.jpg
+hotend.jpg
+hot-gap.jpg
+uprights.jpg
+xbeam.jpg
+zlimit.jpg
