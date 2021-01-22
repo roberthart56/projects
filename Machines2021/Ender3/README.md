@@ -25,10 +25,10 @@ Above is a picture of the connectors received. A roll of PTFE tubing is included
 ![pic](hotend.jpg)
 ![pic](hot-gap.jpg)
 
-Once I got the machine together, and printed a first part, I took it apart and re-assembled, being more careful in places. Documents on the SD card that comes in the box also have the assembly instructions, with more details.  [Here]() is the pdf.
+Once I got the machine together, and printed a first part, I took it apart and re-assembled, being more careful in places. Documents on the SD card that comes in the box also have the assembly instructions, with more details.  [Here](ender3_assy.pdf) is the pdf.
  Below are notes from both builds: 
 
-  *  * 
+  *  
   * Tighten nuts on roller assembly, and adjust eccentric nuts to proper tension to take wobble out of plate.  This is easiest to do before assembling.   [video](https://www.youtube.com/watch?v=GsEdU8ZtI6U) gives a good explanation of these nuts.
   * Square uprights before tightening nuts completely.
   * Adjust all rollers on extrusions before assembling.  (eccentric nuts again).
