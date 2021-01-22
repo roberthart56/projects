@@ -6,26 +6,33 @@ Received Ender3.
 
 **Build notes.**
 
-* Used documentation in booklet.  Took about 1.5 hours for assembly.  A build video [here](https://www.youtube.com/watch?v=me8Qrwh907Q&feature=emb_title) that may be useful.  Suggests that tubing couplers be upgraded.
-  * Note 1
-  * Note 2, etc.
+Below are some pictures.  Top layer of box as received.  After placing uprights.  Detail of xbeam assembly.  z-limit switch placement.
+
+![pic](box.jpg)
+![pic](uprights.jpg)
+![pic](xbeam.jpg)
+![pic](zlimit.jpg)
+
+
+* Used documentation in booklet.  Took about 1.5 hours for assembly.  A build video [here](https://www.youtube.com/watch?v=me8Qrwh907Q&feature=emb_title) that may be useful.  Suggests that tubing couplers be upgraded.  Of course, I put it together first, and then watched the video. For those who are more cautious, the build video could be followed with good results. 
+  
+ *  listening to video
+  * upgrade connectors, aluminum extruder.
+  * Tighten nuts on roller assembly, and adjust eccentric nuts to proper tension to take wobble out of plate.  This is easiest to do before assembling.
+  * Square uprights before tightening nuts completely.
+  * Adjust all rollers on extrusions before assembling.  (eccentric nuts again).
+  * Suggests replacing cable ties around wire bundle to make less tight. 
     
-  * Printer bed was very floppy - several mm play.  Found that the roller bearing assemblies all have one side with a hex collar that is eccentric, and allows adjustment of tension.  Adjusted bed to get smooth motion with very little play.  Other bearing assemblies feel better, but may still need adjustment later. [video](https://www.youtube.com/watch?v=GsEdU8ZtI6U) gives a good explanation of these nuts.
+ * Printer bed was very floppy - several mm play.  Found that the roller bearing assemblies all have one side with a hex collar that is eccentric, and allows adjustment of tension.  Adjusted bed to get smooth motion with very little play.  Other bearing assemblies feel better, but may still need adjustment later. [video](https://www.youtube.com/watch?v=GsEdU8ZtI6U) gives a good explanation of these nuts.
   
 * Tube connectors are not great.  So far, I cannot get them to hold the tube on the extruder motor end, although the het end one seems to work.    [Amazon link to replacement parts](https://amzn.to/2JXDcvX)  I ordered a set of these.  
 
+Here are the parts:  ![pic](fittings.jpg)
+
 * Issues on getting hot end clogged and gap between tube and nozzle, related to poor quaility couplers. [Video here](https://www.youtube.com/watch?v=30qqKUwviww)
-
-
-![pic](box.jpg)
 
 ![pic](hotend.jpg)
 
 ![pic](hot-gap.jpg)
 
-![pic](uprights.jpg)
-
-![pic](xbeam.jpg)
-
-![pic](zlimit.jpg)
 
