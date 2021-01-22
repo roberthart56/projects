@@ -20,7 +20,7 @@ For the initial build, I used the instructions in the booklet that came in the b
 ![pic](fittings.jpg)
 
 These work better.  I also replaced the hot end connector with one from the Amazon package.  Both seem of better quality.
-Above is a picture of the connectors received. A roll of PTFE tubing is included.  We should probably order a bunch of these, and have students build with the better fittings.  In the Creality hotend design, the PTFE tube goes all the way to the nozzle.  The tubing connector needs to work in order for there not to be a gap between tube and hot nozzle.   [Here is a video](https://www.youtube.com/watch?v=30qqKUwviww) that shows how to unclog the hot end when filament gets bunched up at the nozzle.  Below are pictures of the hot end with the shroud removed, and a filament that experienced a gap between tube and nozzle.
+Above is a picture of the connectors received. A roll of PTFE tubing is included.  We should probably order a bunch of these, and have students build with the better fittings.  In the Creality hotend design, the PTFE tube goes all the way to the nozzle.  The tubing connector needs to work in order for there not to be a gap between tube and hot nozzle.   [Here is a video](https://www.youtube.com/watch?v=30qqKUwviww) that shows how to unclog the hot end when filament gets bunched up at the nozzle.  Below are pictures of the hot end with the shroud removed, and a filament that experienced a gap between tube and nozzle. (ie, the filament was pushed in without the tube in place!)
 
 ![pic](hotend.jpg)
 ![pic](hot-gap.jpg)
