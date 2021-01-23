@@ -46,4 +46,8 @@ KiCad, Freecad, Chrome, magick, inkscape, gimp,
 
 Here is a good VIM tutorial! : https://www.linux.com/training-tutorials/vim-101-beginners-guide-vim/
 
+1/223/21
+
+Vim book here:  http://www.eandem.co.uk/mrw/vim/usr_doc/a4s_bm.pdf
+Liking VIM.  Perfect language to learn during a pandemic.
 
