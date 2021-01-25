@@ -75,5 +75,15 @@ Worked on Ender3.  Installed new fittings.  Made first print.
 Work on plotting saddle data in matplotlib.
 
 
+###  Jan 25
+
+Document work on assembling and testing [Ender-3 3D printer](../../Machines2021/Ender3/README.md)
+
+Swap igniters in oven to fix heating problem.
+
+Talk with Louis about [saddles](https://github.com/roberthart56/SCFAB/tree/master/SC_lab/Projects/rotating_saddle).  Several things to do to help me understand, and to make our paper better.   
+
+Assemble Sainsmart Genmitsu router.  [document here](../../Machines2021/genmitsu/README.md)
+
 
 

@@ -37,7 +37,7 @@ Once I got the machine together, and printed a first part, I took it apart and r
   * When placing the x-beam assembly on the vertical rails, insert the lead screw in the nut, run through its range of motion, tighten the bolts on the leadscrew nut, and back them off one turn.  Check for binding, and loosen more is needed. (suggestion from the linked build video).
   * During reassembly the x-axis limit switch came apart and had to be superglued.  Problem with quality of parts and need for more care in manipulation.
   * Remove the cable ties around wire bundle to give the filament tube more freedom.  Figure out some good way to keep the cables moving freeleywithout straining connections at the hot end.  I just tied them with a rubber band to the top horizontal rail.  
-  * Level the bed by moving around with the steppers off, repeatedly adjusting for distance using a sheet of paper.  
+  * Level the bed.  Run auto-z (in Prepare menu) and adjust the z-limit switch height so the the nozzle ends up a mm or so above the plate level. Than adjust the bed by moving around with the steppers off, repeatedly adjusting for distance using a sheet of paper.  
   * Bed levelling [video](https://www.youtube.com/watch?v=5eqTmb01cBk) 
   * Then preheat and load filament.  I used a gcode [linked here](./CE3_FDG_Bed_Level_190x190.gcode) that I downloaded from the link in the video below.  This code prints a nice border - can adjust the bed as it's printing.  Then it prints five pads at corners and middle.  Pictures below of before and after final adjustments.
 
