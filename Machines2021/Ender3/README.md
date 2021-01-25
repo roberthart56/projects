@@ -54,6 +54,7 @@ Once I got the machine together, and printed a first part, I took it apart and r
 ![pic](./figs/comparison.jpg)
 
 * Compared to PRUSA
+
  * Nothing is automatic - bed levelling and filament chages are all done by hand.
  * Design is very clean - not as much to fiddle with.  Hot end is more accessible.
  * Really easy to understand how it all works.  
