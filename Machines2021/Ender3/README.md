@@ -34,6 +34,7 @@ Once I got the machine together, and printed a first part, I took it apart and r
   * Square uprights before tightening nuts completely.
   * Adjust all rollers on extrusions before assembling.  There are three sets of these:  Two that move the z-direction, and one that moves the hotend on the x-beam.  (eccentric nuts again).
   * When placing the x-beam assembly on the vertical rails, insert the lead screw in the nut, run through its range of motion, tighten the bolts on the leadscrew nut, and back them off one turn.  Check for binding, and loosen more is needed. (suggestion from the linked build video).
+  * During reassembly the x-axis limit switch came apart and had to be superglued.  Problem with quality of parts and need for more care in manipulation.
   * Remove the cable ties around wire bundle to give the filament tube more freedom.  Figure out some good way to keep the cables moving freeleywithout straining connections at the hot end.  I just tied them with a rubber band to the top horizontal rail.  
   * Level the bed by moving around with the steppers off, repeatedly adjusting for distance using a sheet of paper.  
   * Bed levelling [video](https://www.youtube.com/watch?v=5eqTmb01cBk) 
@@ -47,7 +48,12 @@ Once I got the machine together, and printed a first part, I took it apart and r
 **Evaluation and comments.**
 
 * The x motion of the hot end has a bit of a bump every ~70 mm, consistent with a bad place on a roller.  
-
+* Some components are low quality - tube connectors especially should be replaced.  There is also an aluminum version of the extruder hardware available online.
 * Below is a picture of a test print: [Freecad file](./overhang_test.FCStd) and [stl file](./overhang.stl), printed with the same PLA filament on the Ender-3 and on a PRUSA MK3S. The Ender print is perhaps a little better than PRUSA's. 
 
 ![pic](./figs/comparison.jpg)
+
+* Compared to PRUSA
+ * Nothing is automatic - bed levelling and filament chages are all done by hand.
+ * Design is very clean - not as much to fiddle with.  Hot end is more accessible.
+ * Really easy to understand how it all works.  
