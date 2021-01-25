@@ -52,7 +52,7 @@ Once I got the machine together, and printed a first part, I took it apart and r
 * Some components are low quality - tube connectors especially should be replaced.  There is also an aluminum version of the extruder hardware available online.
 * Below is a picture of a test print: [Freecad file](./overhang_test.FCStd) and [stl file](./overhang.stl), printed with the same PLA filament on the Ender-3 and on a PRUSA MK3S. The Ender print is perhaps a little better than PRUSA's. 
 
-![pic](./figs/comparison.jpg)
+![pic](./figs/comparison_rot.jpg)
 
 * Compared to PRUSA
 	* Nothing is automatic - bed levelling and filament chages are all done by hand.
