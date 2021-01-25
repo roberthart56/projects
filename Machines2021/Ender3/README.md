@@ -1,4 +1,4 @@
-# Machine Class stuff 2021
+h Machine Class stuff 2021
 
 ### Jan 15
 
@@ -37,4 +37,12 @@ Once I got the machine together, and printed a first part, I took it apart and r
 
 * Issues on getting hot end clogged and gap between tube and nozzle, related to poor quaility couplers.
 
+Evaluation.
+
+
+![pic](./figs/comparison.jpg)
+![pic](./corner001.jpg)
+![pic](./corners_adj.jpg)
+![pic](./upperleft_adj.jpg)
+![pic](./upperleft.jpg)
 
