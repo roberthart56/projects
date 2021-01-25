@@ -41,8 +41,8 @@ Evaluation.
 
 
 ![pic](./figs/comparison.jpg)
-![pic](./corner001.jpg)
-![pic](./corners_adj.jpg)
-![pic](./upperleft_adj.jpg)
-![pic](./upperleft.jpg)
+![pic](./figs/corner001.jpg)
+![pic](./figs/corners_adj.jpg)
+![pic](./figs/upperleft_adj.jpg)
+![pic](./figs/upperleft.jpg)
 
