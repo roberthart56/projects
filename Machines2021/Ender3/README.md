@@ -48,7 +48,8 @@ Once I got the machine together, and printed a first part, I took it apart and r
 
 **Evaluation and comments.**
 
-* The x motion of the hot end has a bit of a bump every ~70 mm, consistent with a bad place on a roller.  
+* Toolkit was sufficient.  I used a tweezer in addition, and would have been happy with hex ball drivers.  
+* The x motion of the hot end has a bit of a bump every ~70 mm, consistent with a bad place on a roller. I'll check this. 
 * Some components are low quality - tube connectors especially should be replaced.  There is also an aluminum version of the extruder hardware available online.
 * Below is a picture of a test print: [Freecad file](./overhang_test.FCStd) and [stl file](./overhang.stl), printed with the same PLA filament on the Ender-3 and on a PRUSA MK3S. The Ender print is perhaps a little better than PRUSA's. 
 
@@ -57,4 +58,8 @@ Once I got the machine together, and printed a first part, I took it apart and r
 * Compared to PRUSA
 	* Nothing is automatic - bed levelling and filament chages are all done by hand.
 	* Design is very clean - not as much to fiddle with.  Hot end is more accessible.
+	* Could remove hot end and put something else on the carriage with no problem.
 	* Really easy to understand how it all works.  
+
+* I'd like to put a spindle on the x-carriage and see if I can mill a circuitboard.  
+
