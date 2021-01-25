@@ -40,9 +40,9 @@ Once I got the machine together, and printed a first part, I took it apart and r
   * Then preheat and load filament.  I used a gcode [linked here](./CE3_FDG_Bed_Level_190x190.gcode) that I downloaded from the link in the video below.  This code prints a nice border - can adjust the bed as it's printing.  Then it prints five pads at corners and middle.  Pictures below of before and after final adjustments.
 
 ![pic](./figs/corner001.jpg)
+![pic](./figs/upperleft.jpg)
 ![pic](./figs/corners_adj.jpg)
 ![pic](./figs/upperleft_adj.jpg)
-![pic](./figs/upperleft.jpg)
 
 **Evaluation and comments.**
 
