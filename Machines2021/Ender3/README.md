@@ -28,21 +28,26 @@ Above is a picture of the connectors received. A roll of PTFE tubing is included
 Once I got the machine together, and printed a first part, I took it apart and re-assembled, being more careful in places. Documents on the SD card that comes in the box also have the assembly instructions, with more details.  [Here](ender3_assy.pdf) is the pdf.
  Below are notes from both builds: 
 
-  *  
+  * Replace tubing coupler on both extruder and hot end side of PTFE tube.  
   * Tighten nuts on roller assembly, and adjust eccentric nuts to proper tension to take wobble out of plate.  This is easiest to do before assembling.   [video](https://www.youtube.com/watch?v=GsEdU8ZtI6U) gives a good explanation of these nuts.
+  * Tighten plate levelling screws all the way and then back off 2-3 turns.
   * Square uprights before tightening nuts completely.
-  * Adjust all rollers on extrusions before assembling.  (eccentric nuts again).
-  * Suggests replacing cable ties around wire bundle to make less tight. 
-  * bed levelling [video](https://www.youtube.com/watch?v=5eqTmb01cBk) 
+  * Adjust all rollers on extrusions before assembling.  There are three sets of these:  Two that move the z-direction, and one that moves the hotend on the x-beam.  (eccentric nuts again).
+  * When placing the x-beam assembly on the vertical rails, insert the lead screw in the nut, run through its range of motion, tighten the bolts on the leadscrew nut, and back them off one turn.  Check for binding, and loosen more is needed. (suggestion from the linked build video).
+  * Remove the cable ties around wire bundle to give the filament tube more freedom.  Figure out some good way to keep the cables moving freeleywithout straining connections at the hot end.  I just tied them with a rubber band to the top horizontal rail.  
+  * Level the bed by moving around with the steppers off, repeatedly adjusting for distance using a sheet of paper.  
+  * Bed levelling [video](https://www.youtube.com/watch?v=5eqTmb01cBk) 
+  * Then preheat and load filament.  I used a gcode [linked here](./CE3_FDG_Bed_Level_190x190.gcode) that I downloaded from the link in the video below.  This code prints a nice border - can adjust the bed as it's printing.  Then it prints five pads at corners and middle.  Pictures below of before and after final adjustments.
 
-* Issues on getting hot end clogged and gap between tube and nozzle, related to poor quaility couplers.
-
-Evaluation.
-
-
-![pic](./figs/comparison.jpg)
 ![pic](./figs/corner001.jpg)
 ![pic](./figs/corners_adj.jpg)
 ![pic](./figs/upperleft_adj.jpg)
 ![pic](./figs/upperleft.jpg)
 
+**Evaluation and comments.**
+
+* The x motion of the hot end has a bit of a bump every ~70 mm, consistent with a bad place on a roller.  
+
+* Below is a picture of a test print: [Freecad file](./overhang_test.FCStd) and [stl file](./overhang.stl), printed with the same PLA filament on the Ender-3 and on a PRUSA MK3S. The Ender print is perhaps a little better than PRUSA's. 
+
+![pic](./figs/comparison.jpg)
