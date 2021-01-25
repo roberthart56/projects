@@ -33,6 +33,7 @@ Once I got the machine together, and printed a first part, I took it apart and r
   * Tighten plate levelling screws all the way and then back off 2-3 turns.
   * Square uprights before tightening nuts completely.
   * Adjust all rollers on extrusions before assembling.  There are three sets of these:  Two that move the z-direction, and one that moves the hotend on the x-beam.  (eccentric nuts again).
+  * When putting roller sets on the x-beam extrusion, take care to align edges of roller assemblies with the extrusion edges.  It would be better to put the whole beam together, then tighten ... but it does not look practical.
   * When placing the x-beam assembly on the vertical rails, insert the lead screw in the nut, run through its range of motion, tighten the bolts on the leadscrew nut, and back them off one turn.  Check for binding, and loosen more is needed. (suggestion from the linked build video).
   * During reassembly the x-axis limit switch came apart and had to be superglued.  Problem with quality of parts and need for more care in manipulation.
   * Remove the cable ties around wire bundle to give the filament tube more freedom.  Figure out some good way to keep the cables moving freeleywithout straining connections at the hot end.  I just tied them with a rubber band to the top horizontal rail.  
