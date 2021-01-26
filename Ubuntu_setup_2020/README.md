@@ -51,3 +51,7 @@ Here is a good VIM tutorial! : https://www.linux.com/training-tutorials/vim-101-
 Vim book here:  http://www.eandem.co.uk/mrw/vim/usr_doc/a4s_bm.pdf
 Liking VIM.  Perfect language to learn during a pandemic.
 
+1/26/21
+
+Put bash aliases in .bash_aliases.  These get installed on startup.
+
