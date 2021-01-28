@@ -1,4 +1,4 @@
-h Machine Class stuff 2021
+### Machine Class stuff 2021
 
 ### Jan 15
 
@@ -62,4 +62,10 @@ Once I got the machine together, and printed a first part, I took it apart and r
 	* Really easy to understand how it all works.  
 
 * I'd like to put a spindle on the x-carriage and see if I can mill a circuitboard.  
+
+* 1/28/21:  made a PETG part.  Seems to adhere well with isopropyl wipe, T=250, but not at 240.  
+
+![processor part]
+
+[stl file](./processor_part02.stl)
 
