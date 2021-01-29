@@ -65,7 +65,7 @@ Once I got the machine together, and printed a first part, I took it apart and r
 
 * 1/28/21:  made a PETG part.  Seems to adhere well with isopropyl wipe, T=250, but not at 240.  
 
-![processor part]
+![processor part](.figs/part02.jpg)
 
 [stl file](./processor_part02.stl)
 
