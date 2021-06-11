@@ -41,7 +41,7 @@ Here's the rotor attached to the motor, both mounted to a board.  Then placed in
 </p>
 
 
-A PVC pipe fitting was drilled to match the adapter.  (This was a fun part to design)
+A PVC pipe fitting was drilled to match the adapter.  (The adapter was a fun part to design)
 
 <img src="./pics/adapter-socket.jpg"  width="50%"/>
 
@@ -49,7 +49,9 @@ It turned out that 5 volts powered the pump well enough to get a bit of airflow 
 
 <img src="./pics/leads.jpg"  width="50%"/>
 
-And the whole thing hot-glued together.
-<img src="./pics/rev1_closeup.jpg"  width="50%"/>
-<img src="./pics/rev1.jpg"  width="50%"/>
+And the whole thing hot-glued together to try out.  A usb power pack should be able to run this for hours.  The flow is great enough to dry a bag in ~15 minutes.  Almost useful!
 
+<p>
+<img src="./pics/rev1_closeup.jpg"  width="40%">
+<img src="./pics/rev1.jpg"  width="40%">
+</p>
