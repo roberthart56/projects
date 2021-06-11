@@ -12,6 +12,7 @@ I found a 120V fan that plugs into the wall.  It pushes a lot of air, and is ver
 I made a series of concept sketches, thinking about the motor that I would use, and how to interface the output with a useful tube. In this process, I figured out what parts would be designed, and how they would attach to a plywood base.  I tried to keep it modular, with the parts as simple as possible.  
  
 ![sketch1](./sketch1.jpg) 
+<img src="sketch1.jpg"  width="40%"/>
 
 Then I sat down with ruler and made a sketch that had some of the relevant dimensions, so that I could design it in CAD.
 
