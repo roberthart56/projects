@@ -64,7 +64,7 @@ And the whole thing hot-glued together to try out.  A usb power pack should be a
     * Built-in micro USB connector.
   
   * This could be a good platform for learning and demonstrating many physics and engineering capabilities.  Fits in well with "How to Make ...." demos.
-    * [Design of turbomachines].(http://160592857366.free.fr/joe/ebooks/Mechanical%20Engineering%20Books%20Collection/TURBOMACHINES/Fluid_Mechanics_and_Thermodynamics_of_Turbomachinery_4E.pdf)
+    * [Design of turbomachines.](http://160592857366.free.fr/joe/ebooks/Mechanical%20Engineering%20Books%20Collection/TURBOMACHINES/Fluid_Mechanics_and_Thermodynamics_of_Turbomachinery_4E.pdf)
     * Measurement.
       *Pressure with fluid-level gauge (capacitance or optical) or SPI commercial chip.
       * Flow measurement using "hot wire" thermistor.
