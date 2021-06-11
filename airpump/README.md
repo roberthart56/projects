@@ -23,9 +23,12 @@ Then I sat down with ruler and made a sketch that had some of the relevant dimen
 
 First version of the rotor in CAD.  After the first try, I had a rotor with diameter of 130 mm.  Only when I saw the outline on the 3D printer bed, did I realize that this was bigger than I wanted.  Went back, and designed the rotor pictured below, about 100 mm in diameter:
 
+<p>
 <img src="./pics/rotor02.png"  width="30%"/>
 <img src="./pics/motorholder.png"  width="30%"/>
 <img src="./pics/adapter.png"  width="30%"/>
+</p>
+
 
 <img src="./pics/adapter-socket.jpg"  width="50%"/>
 <img src="./pics/pump-board.jpg"  width="50%"/>
