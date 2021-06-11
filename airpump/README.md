@@ -63,7 +63,10 @@ And the whole thing hot-glued together to try out.  A usb power pack should be a
     * More flow area in the same volume for more flow at same speed.
     * Built-in micro USB connector.
   
-  * lklkjlkj
-    * kjlkj
-    * lkjlkj
-
+  * This could be a good platform for learning and demonstrating many physics and engineering capabilities.  Fits in well with "How to Make ...." demos.
+    * Design of turbomachines.
+    * Measurement.
+      *Pressure with fluid-level gauge (capacitance or optical) or SPI commercial chip.
+      * Flow measurement using "hot wire" thermistor.
+      * Characterization of motor torque/efficiency.
+      * Flow measurement using sound.
