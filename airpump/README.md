@@ -55,3 +55,15 @@ And the whole thing hot-glued together to try out.  A usb power pack should be a
 <img src="./pics/rev1_closeup.jpg"  width="40%">
 <img src="./pics/rev1.jpg"  width="40%">
 </p>
+
+### Next steps.
+
+  * Make a version with:
+    * proper hardware for fastening and better joining of parts.
+    * More flow area in the same volume for more flow at same speed.
+    * Built-in micro USB connector.
+  
+  *  lklkjlkj
+    * kjlkj
+    * lkjlkj
+
