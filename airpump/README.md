@@ -21,7 +21,7 @@ Then I sat down with ruler and made a sketch that had some of the relevant dimen
 
 <img src="./pics/sketch2.jpg"  width="50%"/>
 
-First version of the rotor in CAD.  After the first try, I had a rotor with diameter of 130 mm.  Only when I saw the outline on the 3D printer bed, did I realize that this was bigger than I wanted.  Went back, and designed the rotor pictured below, about 100 mm in diameter:
+First version of the rotor in CAD.  After the first try, I had a rotor with diameter of 130 mm.  Only when I saw the outline on the 3D printer bed, did I realize that this was bigger than I wanted.  Went back, and designed the rotor pictured below, about 100 mm in diameter.  Also pictured: a motor holder and an adapter for the output.
 
 <p>
 <img src="./pics/rotor02.png"  width="30%"/>
@@ -29,10 +29,27 @@ First version of the rotor in CAD.  After the first try, I had a rotor with diam
 <img src="./pics/adapter.png"  width="30%"/>
 </p>
 
+All files are in the repository in the 'cad' directory.  Stl files in the 'stl' directory.
+
+
+Here's the rotor attached to the motor, both mounted to a board.  Then placed into volute and covered with the cap.
+
+
+<p>
+<img src="./pics/rotor-mounted.jpg"  width="50%"/>
+<img src="./pics/pump-board.jpg"  width="50%"/>
+</p>
+
+
+A PVC pipe fitting was drilled to match the adapter.  (This was a fun part to design)
 
 <img src="./pics/adapter-socket.jpg"  width="50%"/>
-<img src="./pics/pump-board.jpg"  width="50%"/>
+
+It turned out that 5 volts powered the pump well enough to get a bit of airflow while keeping the whole thing pretty quiet.  The motor draws about 0.06 amps at that voltage.  The motor leads were soldered to a USB cable. 
+
+<img src="./pics/leads.jpg"  width="50%"/>
+
+And the whole thing hot-glued together.
 <img src="./pics/rev1_closeup.jpg"  width="50%"/>
 <img src="./pics/rev1.jpg"  width="50%"/>
-<img src="./pics/rotor-mounted.jpg"  width="50%"/>
 
