@@ -36,8 +36,8 @@ Here's the rotor attached to the motor, both mounted to a board.  Then placed in
 
 
 <p>
-<img src="./pics/rotor-mounted.jpg"  width="50%"/>
-<img src="./pics/pump-board.jpg"  width="50%"/>
+<img src="./pics/rotor-mounted.jpg"  width="40%"/>
+<img src="./pics/pump-board.jpg"  width="40%"/>
 </p>
 
 
