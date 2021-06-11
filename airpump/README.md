@@ -21,7 +21,7 @@ Then I sat down with ruler and made a sketch that had some of the relevant dimen
 
 <img src="./pics/sketch2.jpg"  width="50%"/>
 
-First version of the rotor in CAD.  After the first try, I had a rotor with diameter of 130 mm.  Only when I saw the outline on the 3D printer bed, did I realize that this was bigger than I wanted.  Went back, and designed the rotor pictured below, about 100 mm in diameter.  Also pictured: a motor holder and an adapter for the output.
+First version of the rotor in CAD.  After the first try, I had a rotor with diameter of 130 mm.  Only when I saw the outline on the 3D printer bed, did I realize that this was bigger than I wanted.  Went back, and designed the rotor pictured below, about 100 mm in diameter.  Also pictured (not to scale): a motor holder and an adapter for the output.
 
 <p>
 <img src="./pics/rotor02.png"  width="30%"/>
@@ -66,7 +66,7 @@ And the whole thing hot-glued together to try out.  A usb power pack should be a
   * This could be a good platform for learning and demonstrating many physics and engineering capabilities.  Fits in well with "How to Make ...." demos.
     * [Design of turbomachines.](http://160592857366.free.fr/joe/ebooks/Mechanical%20Engineering%20Books%20Collection/TURBOMACHINES/Fluid_Mechanics_and_Thermodynamics_of_Turbomachinery_4E.pdf)
     * Measurement.
-      *Pressure with fluid-level gauge (capacitance or optical) or SPI commercial chip.
+      * Pressure with fluid-level gauge (capacitance or optical) or SPI commercial chip.
       * Flow measurement using "hot wire" thermistor.
       * Characterization of motor torque/efficiency.
       * Flow measurement using sound.
