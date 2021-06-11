@@ -63,7 +63,7 @@ And the whole thing hot-glued together to try out.  A usb power pack should be a
     * More flow area in the same volume for more flow at same speed.
     * Built-in micro USB connector.
   
-  *  lklkjlkj
+  * lklkjlkj
     * kjlkj
     * lkjlkj
 
