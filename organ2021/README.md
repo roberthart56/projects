@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html>
-<title>Virtual Organ</title>
-
-<xmp theme="bootstrap" style="display:none;">
-<br>
 
 
 ## Virtual organ project(s) starting June 2021
@@ -15,7 +9,4 @@ Hauptwerk forum has good discussions on DIY and third party midi interfaces.
 [midi controllers - this one for pedal and swell pots.](http://www.dtsmidisystems.com/midiencoders.html)
 
 
-</xmp>
 
-<script src="./../strapdown/strapdown.js"></script>
-</html>
