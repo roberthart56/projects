@@ -30,7 +30,7 @@ Hauptwerk forum has good discussions on DIY and third party midi interfaces.
 * Purchase new three-manual MIDI keyboard to insert into Rodgers console.
 * Re-integrate pedalboard, and add support for expression pedals.
 * Work on Audio, possible buying better sound card, amplifiers, speakers ........
-* A more expensive and perhaps favored alternative is to buy a console already designed for Hauptwerk and ready to roll.  This might have integrated stop tabs and stuff.
+* A more expensive and perhaps favored alternative is to buy a console already designed for Hauptwerk and ready to roll.  This might have integrated stop tabs and stuff.  The DIY scheme outlined above will leave us with many options for growth, and great flexibility to choos organs and play with sound.  A future organist might be overwhelmed by this, however.....Not Casey, of course.
 
 
 
