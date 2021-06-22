@@ -9,6 +9,10 @@ Hauptwerk forum has good discussions on DIY and third party midi interfaces.
 
 [keyboards, midi, other](https://us.midiworks.ca/)
 
+### Hauptwerk notes.
+For ASUS computer, use ASIO driver.  Sound is bad until I click on "device control panel" and set to smallest - 2ms.  
+
+
 ### Thoughts on Rodgers 32B
 
 * Very difficult to MIDIFY with existing organ kept intact.  No reason to do this other than sentiment/respect.
