@@ -9,7 +9,7 @@ Hauptwerk forum has good discussions on DIY and third party midi interfaces.
 
 [keyboards, midi, other](https://us.midiworks.ca/)
 
-###Possible plan
+### Possible plan
 
 * Get Hauptwerk werking, and find combination of miDI keyboard and amp/speaker that will let us demo and try it at Church.
 * Once manuals are working, in a combination that makes sound that is usable for Church:
