@@ -8,5 +8,6 @@ Hauptwerk forum has good discussions on DIY and third party midi interfaces.
 
 [midi controllers - this one for pedal and swell pots.](http://www.dtsmidisystems.com/midiencoders.html)
 
+[keyboards, midi, other](https://us.midiworks.ca/)
 
 
