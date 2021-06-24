@@ -9,6 +9,8 @@ Hauptwerk forum has good discussions on DIY and third party midi interfaces.
 
 [keyboards, midi, other](https://us.midiworks.ca/)
 
+[Sparkfun MIDI tutorial](https://learn.sparkfun.com/tutorials/midi-tutorial/all)
+
 ### Hauptwerk notes.
 For ASUS computer, use ASIO driver.  Sound is bad until I click on "device control panel" and set to smallest - 2ms.  
 
@@ -19,6 +21,7 @@ For ASUS computer, use ASIO driver.  Sound is bad until I click on "device contr
 * Can reuse the console box, putting new keyboards in (with better touch).  Keyboards come with piston buttons that interface with Hauptwerk.
 * Can reuse the pedalboard.  Use existing switches as MIDI inputs? 
 * A big project to reuse stop tabs - probably don't want to do this.
+* Current speaker system has r/l inputs to one speaker set and single input to Woofer.  2 X 500Watt Amplifiers in Organ "loft".
 
 
 ### Possible plan
@@ -29,7 +32,7 @@ For ASUS computer, use ASIO driver.  Sound is bad until I click on "device contr
   * Add a committed computer and a Church Hauptwerk subscription.
   * and MIDIfy the pedalboard for use with the two-manual MIDI keyboard.
   * Add a touchpad.  Novation Launchpad, or Behringer pad.
-  * Figure out how to interface to the existing speakers, using any amplifier necessary.
+  * Figure out how to interface to the existing speakers, using any amplifier necessary.  Existing 2x500Watt amps should be good!
   * This all might be done by early Fall, in time for re-convening? Pedalboard may take longer.
 * Purchase new three-manual MIDI keyboard to insert into Rodgers console.
 * Re-integrate pedalboard, and add support for expression pedals.
