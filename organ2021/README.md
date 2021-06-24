@@ -21,7 +21,8 @@ For ASUS computer, use ASIO driver.  Sound is bad until I click on "device contr
 * Can reuse the console box, putting new keyboards in (with better touch).  Keyboards come with piston buttons that interface with Hauptwerk.
 * Can reuse the pedalboard.  Use existing switches as MIDI inputs? 
 * A big project to reuse stop tabs - probably don't want to do this.
-* Current speaker system has r/l inputs to one speaker set and single input to Woofer.  2 X 500?Watt Amplifiers in Organ "loft".  I was able to make organ sound using my laptop audio out plugged into these amps.  The amps turn on with a relay when the organ is powered.  One of the cables from the organ goes into a switchbox.
+* Current speaker system has r/l inputs to one speaker set and single input to Woofer.  2 X 500?Watt Amplifiers in Organ "loft".  I was able to make organ sound using my laptop audio out plugged into these amps.  The amps turn on with a relay when the organ is powered.  One of the cables from the organ goes into a switchbox, and activates the relay (details??).
+
 
 
 ### Possible plan
