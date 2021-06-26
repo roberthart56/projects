@@ -37,3 +37,7 @@ Second batch of Orange marmalade:
 * 2C water
 
 Cook to desired stage.  I had no luck measuring temp with any probes that I have.  Stopped when the texture seemed right and the mixture set on a cold plate.  Better to use metal surface than cold plate!  I may have taken this too far.  Next time take out samples to cool as setting temp is approached.  This quantity made 1.5 pints.  Gotta love the mixed units.
+
+### June 26, 2021   Lemon upside down cake:
+
+https://www.tastecooking.com/recipes/lemon-cardamom-upside-down-cake/
