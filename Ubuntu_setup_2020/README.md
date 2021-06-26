@@ -55,3 +55,6 @@ Liking VIM.  Perfect language to learn during a pandemic.
 
 Put bash aliases in .bash_aliases.  These get installed on startup.
 
+### July 2021
+
+Here's what to do to dual-boot ubuntu and windows:  https://www.youtube.com/watch?v=u5QyjHIYwTQ
