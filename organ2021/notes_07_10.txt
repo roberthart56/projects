@@ -1,0 +1,18 @@
+
+Notes from first in-person meeting:
+- Today had us inspecting the loft producing sound out of loft speakers using playing from Hauptwerk Installation  on R's laptop. 
+Sounds quite nice though we will need more amplification.
+- Somewhat down the road but may want to consult with Regathering Committee (henceforth RC) re: small antiphonal (front of church) speakers for reed stops etc.
+- agreed MVP is two manual system playing Hauptwerk through altar speaker system. C would like to have this in place soon and potentially try playing with choir to 
+test for sight lines/coordination as well as sound.
+- seems we would like to try Novation Launchpad instead of touchscreen for stops/presets.
+- Once MVP can be demonstrated would be important to update vestry re: future planes
+- may want to discuss with RC about sound issues as there has been discussion on their part of replacing soundboard.
+- C would like to undertake pedal midifying ASAP though unsure how it's done. WIll do more research
+
+for next time:
+
+R will work on driving sound to loft and altar speakers either alternately or together
+C will work to get midi to drive  from the existing dual manual keyboard at church.
+C will research next steps / what to order for midifying pedals
+C will 'ask around'. Seeing out other local Hauptwerk churches/hobbyists for expertise/feedback.
