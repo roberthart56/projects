@@ -16,3 +16,5 @@ R will work on driving sound to loft and altar speakers either alternately or to
 C will work to get midi to drive  from the existing dual manual keyboard at church.
 C will research next steps / what to order for midifying pedals
 C will 'ask around'. Seeing out other local Hauptwerk churches/hobbyists for expertise/feedback.
+
+http://www.dtsmidisystems.com/
