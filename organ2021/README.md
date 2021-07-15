@@ -55,6 +55,6 @@ For ASUS computer, use ASIO driver.  Sound is bad until I click on "device contr
 * Amplifiers, speakers.  
 
 ### More links
-* [list of pictures of virtual organs[(http://www.pcorgan.com/Fotos2EN.html)
+* [list of pictures of virtual organs](http://www.pcorgan.com/Fotos2EN.html)
 * [Contrebombarde.com - has Hauptwerk forums](https://www.contrebombarde.com/concerthall/home/dashboard)
 * 
