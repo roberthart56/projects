@@ -1,0 +1,14 @@
+R and C met to update each other on progress and to make noise.
+updates:
+- R can drive Hauptwerk sounds from Arduino board. 
+- C brought pedalboard to church. R and C discussed logistics of adding Hall sensors to pedalboard.
+- C acquired midi interface and together R and C were able to calibrate both Keytar controller and lower manual of combo organ and successfully drove Hauptwerk on laptop.
+next steps:
+- R may open Rodgers console to see about sending sound to loft speakers
+- C will acquire MEGA2560 arduino board (likely has enough pins for our final project) and familiarize self with Arduino IDE
+- C will consult combo organ owners manual and get both keyboards sending midi info.
+- R will try to work up demo of Hall sensor / magnet setup on pedals.
+
+ - C thinks we should document our process with short vid / sound clips and photos. 
+ These might be of interest to Loaves and Fishes as well as other who undertake midifying their own parish organ.
+ 
