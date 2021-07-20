@@ -1,5 +1,6 @@
 ### MIDI Readme
 
+July 20, 2021.  Spent some time figuring out how to send MIDI from Mega2560.  Easy to generate MIDI messages, but to get to USB, need to either use a MID/USB converter as we do with the keyboards, or write code for a native-USB board.  A couple of libraries exist for that.  I used the Arduino [MIDIUSB library](https://github.com/arduino-libraries/MIDIUSB).
 Documenting some Arduino code:
 
 * Code for Arduino mega2560 that sends on/off on a single note: [midi_mega2560_simple.ino](./midi_mega2560_simple.ino)
