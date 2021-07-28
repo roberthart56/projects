@@ -2,7 +2,6 @@
 
 ## Shredder project with Kim Bernard, Starting Summer 2021
 
-![Assembly 1](assembly_1.jpg)
 
-<img src="assembly_1.jpg"  width="30%"/>
+<img src="assembly_1.jpg"  width="50%"/>
 
