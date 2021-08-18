@@ -2,6 +2,6 @@
 
 
 
-<img src="pedal.jpg"  width="50%"/>
+<img src="pedals.jpg"  width="50%"/>
 
 <img src="sketch.jpg"  width="50%"/>
