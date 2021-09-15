@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<title>ATSAM Programming</title>
+
+<xmp theme="journal" style="display:none;">
+<br>
+
+###Kicad notes
+
+####Using Inkscape to make SVG outline filled, to be used by mods.
+
+ - Make an enclosing box on the 'margin' layer in kicad, outside of the edge cut by about 0.050" (~1 mm).
+ - Export svg from Kicad, Black and White, board area only, All layers in a single file.
+ - Open in Iknkscape.  Note that the area is that of the margin.
+ - Set fill to black, using Fill and Stroke settings.
+ - Make two new layers (Layer -> add layer)
+ - Place traces in one, outline in another. (right click -> move to layer)
+ - Hide traces
+ - Go to node editing mode (Choose arrow icon that selects nodes - second down on left)
+ - Shift select all segments, one at a time.
+ - drag select nodes (two at a time) at intersections of segments.
+ - use icon (fourth from left) to combine nodes.
+ - Now you should have fill.  You may need to select object and go back and fiddle with Fill settings.  sometimes I need to try gradient fill before the solid one works.  This means I'm still doing something that I don't understand!
+ 
+####Save traces, outlines, and other output in separate simple SVG files, using 'save as'.
+
+
+
+
+
+</xmp>
+
+
+<script src="./../strapdown/strapdown.js"></script>
+</html>
