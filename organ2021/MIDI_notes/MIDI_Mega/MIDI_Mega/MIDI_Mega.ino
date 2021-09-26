@@ -7,7 +7,7 @@ bool switch_previous[Numpins];
 void setup() {
  Serial.begin(115200);
  Serial1.begin(31250);  //pins 18 and 19.
- for(int i=0; i<Numpins; i++) pin_array[i]=22+i;    //fill in pin array.  In order from 22 to 54.
+ for(int i=0; i<Numpins; i++) pin_array[i]=22+i;    //fill in pin array.  In order from 22 to 53.
  for(int i=0; i<Numpins; i++) note_array[i]=36+i;   //fill in note array, lowest pedalboard c is 36.
  for(int i=0; i<Numpins; i++) pinMode(pin_array[i], INPUT_PULLUP);
  for(int i=0; i<Numpins; i++) switch_previous[i] = 1;
@@ -30,11 +30,13 @@ for(int i=0; i<Numpins; i++){
        MidiSend(0X90, note_array[i], 0X40);  //send note on to channel 1 at velocity 64
        Serial.print("Turned on ");
        Serial.println(note_array[i]);
+       digitalWrite(13, HIGH);
     }
     else {
       MidiSend(0X80, note_array[i], 0X40);  //send note off to channel 1 at velocity 64
       Serial.print("Turned off ");
-       Serial.println(note_array[i]);
+      Serial.println(note_array[i]);
+      digitalWrite(13, LOW);
     }
     switch_previous[i] = switch_read[i];
   }
