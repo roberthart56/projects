@@ -1,0 +1,22 @@
+
+
+March 1, 2022.
+
+This is the error that i get when programming some chips.  Chips that have been programmed with OpenOCD????
+
+
+$ ./edbg -b -t samd11 -epv -f sam_ba_SAMD11C14A.bin 
+Debugger: Alex Taradov Generic CMSIS-DAP Adapter 759A4BFC v0.1 (S)
+Clock frequency: 16.0 MHz
+Target: SAM D11C14A (Rev B)
+Erasing... done.
+Programming.... done.
+Verification...
+at address 0x0 expected 0xfc, read 0xff
+Error: verification failed
+
+
+same command works well when a fresh chip us used.
+
+
+Now, when bootloader is installed, and a program uploaded in Arduino, the program does not run, and the micro disappears as a usb device.  This so far is in LINUX.
