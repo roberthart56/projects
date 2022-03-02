@@ -16,7 +16,9 @@ at address 0x0 expected 0xfc, read 0xff
 Error: verification failed
 
 
-same command works well when a fresh chip us used.
+same command works well when a fresh chip is used.
 
 
 Now, when bootloader is installed, and a program uploaded in Arduino, the program does not run, and the micro disappears as a usb device.  This so far is in LINUX.
+
+Works better in windows.  I re-bootloaded, using sam_ba_SAMD11C14A  bootloader with edbg in windows.  Now can program using Arduino.  Quentin's code works, blink works.
