@@ -6,6 +6,13 @@ Feb 26.  Received through UPS the Clavichord kit.  All appears in good shape.  K
 
 ![kit in box](Clavichord_parts.jpg)
 
+Progress March 2022.
+
+![Keys finished, in process of balancing and adjusting.](March2022.jpg)
+
+
+![Keys detail.](key_detail.jpg)
+
 
 Sketch of clavichord action method.
 
