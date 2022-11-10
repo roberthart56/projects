@@ -6,5 +6,5 @@
 
 <img src=./img/tile_grabber.png width=300>
 
-[image](./img/tile_grabber.png)
+![image](./img/tile_grabber.png)
 
