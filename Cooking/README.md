@@ -41,3 +41,12 @@ Cook to desired stage.  I had no luck measuring temp with any probes that I have
 ### June 26, 2021   Lemon upside down cake:
 
 https://www.tastecooking.com/recipes/lemon-cardamom-upside-down-cake/
+
+ ### Dec. 10, 2022  Orange marmalade
+
+Following Blue Book, with reduced sugar.
+
+* 3.5 lb flesh  2 lemons, 10 little navels
+* 0.5 lb. zest (discard pith).  Chopped.
+* 6 C sugar
+* 6 C water
