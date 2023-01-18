@@ -29,7 +29,7 @@ For ASUS computer, use ASIO driver.  Sound is bad until I click on "device contr
 
 * Get Hauptwerk werking, and find combination of MIDI keyboard and amp/speaker that will let us demo and try it at Church.
 * Once manuals are working, in a combination that makes sound that is usable for Church:
-  * commit to killing off the Rodgers 32B, 
+  * commit to killing off the Rodgers 32B
   * Add a committed computer and a Church Hauptwerk subscription.
   * and MIDIfy the pedalboard for use with the two-manual MIDI keyboard.
   * Add a touchpad.  Novation Launchpad, or Behringer pad.
