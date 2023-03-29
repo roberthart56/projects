@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Rob's Projects:  Telephone Box </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="../style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container-fluid">
+  <h2>Project for Somerville Telephone Boxes. </h2> <br> 
+  <div class="row">
+
+
+    <h3><p>Video of radio communication between two doll arms.  </p></h3>
+
+    <p>Cammand used to compress this video:  ffmpeg -i arms_trimmed.mov  -c:v libx264 -b:v 1.5M -c:a aac -b:a 128k arms_comp.mp4 </p>
+
+<video width="955" height="541" controls>
+    <source src="./arms_comp.mp4" type="video/mp4">
+  </video>
+
+    
+      <p> <h3> Notebook page from September 2019.  </h3> I'd like to make an installation in two ex-payphone boxes on either side of the Davis Square Red Line entry.  A chain emerging from one box is linked via radio to the chain emerging from the other.  One retracts when the other is pulled out by a person, giving the illusion that the two chanis are connected physically.  If done right, the force can be communicated as well as the position. </p>
+
+      <img src="./Notebook.jpg" class="img-responsive margin" style="width:50%"  alt="Sew">
+
+     
+
+<p>ffmpeg -i arms_trimmed.mov  -c:v libx264 -b:v 1.5M -c:a aac -b:a 128k arms_comp.mp4 </p>
+
+      <h3>Nov. 2, 2019</h3>
+
+
+Modify 45.echo.interrupt.c
+<ul>
+  <li> disable interrupt in ISR byt clearing PCI0 bit.</li>
+ <li>- get char from serial in.</li>
+ <li>- set PWM duty cycle by equating OCR0B to char.</li>
+
+</ul>
+
+ <h3>Dec 2019</h3>
+
+
+<p> Work with gearmotors and pwm.  Problem encountered when gearmotors start up.  Motors draw enough current to pull down supply</p>
+<p> force micro to restart.  Doesn't help to add caps.  Add 10 Ohm in series.  This works to  keep micro alive, but drops some voltage and
+dissipates power.  Tried Jameco motor that works at higher voltage and has higher resistance.  Same issue.</p>
+
+<p> Next, separate micro power supply from motor supply.  Thought I tried this without success.  Try again.</p>
+
+
+ 
+<h3>Dec 4, 2019</h3>
+
+
+<p>Separating motor supply helps.  Power with 0-12V benchtop supply.  Power logic from 5V FTDI module.</p>
+<p>They still share ground on the board.  Use larger transistor to handle startup transients.  </p>
+<p>This seems to work reliably now.  If necessary, isolate grounds and use choke in line with motor ground (if necessary)?</p>
+
+<h3>Jan 12, 2020.</h3>
+
+<p>New board.  Still have problems with startups.  Even with micro isolated, using FTDI power supply, it still resets when starting
+at a low PWM fraction from a stop.</p>
+
+<h3>Jan 14, 2020.</h3>
+
+<p>Better with Jameco motor.  Problem is that the gearing makes it harder to turn by hand.  May not work for box.</p>
+
+<p>Reliapro 253471  5V no load 60 RPM at 0.08A  Works better.  Do a faster PWM, with 2 ms period.
+Other motor from MPJA  pn 19285 MD 5V 240 RPM no load 0.16A.</p>
+
+
+<p>See if h-bridge works better.  Yes, it does. <a href='./ATSAM_code/samd11_hbridge01/samd11_hbridge01.ino'>Code here</a> 
+Boyoyboy I like these sams.</p>
+
+<h3>Jan 16, 2020</h3>
+
+Made h-bridge board with SAMD11, with 2x2 headers for USART and ADC.  Look out!  Killed a board by using 5V FTDI.
+
+<p><p>Programs for ATSAMD11 are in ATSAM_code directory.</p>
+<p>Most success with  <a href='./ATSAM_code/samd11_hbridge_03/samd11_hbridge_03.ino'>samd11_hbridge_03.ino</a>
+which sets motor speed accoridng to difference between setpoint
+and potentiometer reading.  When pot is connected to motor, with correct sign, feedback seeks (and overshoots) the
+setpoint.</p>
+
+<h3>Week of Feb 10, 2020</h3>
+
+<p><b>Put together prototype of mechanism for holding motor, spool and potentiometer.  Laser-cut cardboard glued with wood glue. </b> </p>
+ <img src="./Prototype/parts.png" class="img-responsive margin" style="width:50%"  alt="parts">
+
+<p>Above.  Cardboard parts layout.</p>
+
+ <img src="./Prototype/proto04.jpg" class="img-responsive margin" style="width:50%"  alt="01">
+
+ <p>Above.  Final assembly.  Motor on the left, potentiometer on the right.  Ten-turn potentiometer is used as a rotary sensor. </p>
+
+ <img src="./Prototype/proto02.jpg" class="img-responsive margin" style="width:50%"  alt="02">
+ <img src="./Prototype/proto01.jpg" class="img-responsive margin" style="width:50%"  alt="03">
+
+ <p>Above.  This is the way that the spool comes together.  Tricky to get ends of the tube perpendicular to the axis.  Do this either by rotating inside laser cutter (process still needs some work) or by sawing carefully with pull saw.</p>
+
+ <img src="./Prototype/proto03.jpg" class="img-responsive margin" style="width:50%"  alt="04">
+
+  <p>Above.  Closeup of connections to motor.  Use tubing and cable ties for a flexible and stong connection.  For a "bearing" laser-cut a hole nominally the same size as the axle. </p>
+
+ <img src="./Prototype/proto05.jpg" class="img-responsive margin" style="width:50%"  alt="05">
+ 
+ <p>Above.  Use of clamps in glueing cardboard.  Three layers of cardboard are very stiff. Could sandwich foam-core in the middle for a lighter structure still as stiff.</p>
+ 
+<h3>May and June, 2020</h3>
+
+<p>May 28,2020.  Use ESP32 Huzzahboards for one-way sending ofsetpoint and motor driving.  This works, using two pots and one notor.</p>
+
+
+  <a href='./ESP32/rec01_may28.txt'>receive code</a><br>
+  <a href='./ESP32/send01_may28.txt'>transmit code</a>
+
+  <p>Next, put physical prototype together.  Then extend code and hardware for two-way operation.</p>
+
+
+  </div>
+
+  
+  
+</div>
+
+</body>
+</html>
