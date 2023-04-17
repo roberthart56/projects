@@ -23,7 +23,7 @@ EARTH_GRAVITY = 9.80665  # Earth's gravity in [m/s^2]
 adc = machine.ADC(machine.Pin(26))  # create ADC object on ADC pin
 
 pwm0 = PWM(Pin(27))  # create PWM object from a pin
-pwm_freq = 5300
+pwm_freq = 4920
 pwm0.freq(pwm_freq)  # set frequency.   f/32/200 is cycles per second
 pwm0.duty_u16(6000)
 
@@ -121,17 +121,18 @@ print(data)
 utime.sleep(2.0)
 
 # Run forever
-for j in range(5):
+for j in range(11):
     
     for i in range(5):
-        utime.sleep(60)  #wait 
+        utime.sleep(60)  #wait minute * i
         print(i)
     
     
     #Open file
     filename = "data"+str(j)+".txt"
     file=open(filename,"w")	# creation and opening of a CSV file in Write mode
-        
+    file.write(str(pwm_freq)  + "\n")	# Writing frequency data in the opened file
+            
     for i in range(300):  #now take data
         # Read X, Y, and Z values from registers (16 bits each)
         data = reg_read(spi, cs, REG_DATAX0, 6)
@@ -154,3 +155,4 @@ for j in range(5):
     
      #increment frequency
     pwm_freq += 20
+    pwm0.freq(pwm_freq)  # set frequency.   f/32/200 is cycles per second
