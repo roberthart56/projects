@@ -32,3 +32,5 @@ Now, I have a program to collect data to give me information on what to calculat
 4/17/23  Looked at data from 4/12.  Phase is not consistent.  Perhaps need to wait more than five minutes for transients to die.  Also possible that motor needs more current to avoid missed steps.  I changed max current to 0.58 A by adjusting VREF to 0.58V.  Run again and see if battery lasts.
 
 <img src=img/data10_5120.png width=50%>
+
+Looks like results are similar for higher motor current.  Can go back down to lower current.
