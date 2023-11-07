@@ -9,7 +9,7 @@ Here are some tricks for operating in Onshape:
 * draw lines between these points.
 * use sketch fillets to join or separate squares as needed.
 
-![pic](./img/color-4.pdf)
+![pic](img/color-4.pdf)
 
 Once these are placed in Ai:
 
