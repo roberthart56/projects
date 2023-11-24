@@ -50,3 +50,14 @@ Following Blue Book, with reduced sugar.
 * 0.5 lb. zest (discard pith).  Chopped.
 * 6 C sugar
 * 6 C water
+
+### Nov 14, 2023
+
+Vegetable broth:  Use 12 quart pot.
+*2.7 kg from freezer: lots of yellow/green beans, parsely, chard stems, fennel fronds, etc.
+*6 L water
+*fill up to 1" below top of 12 quart pot with onions, 3C dry mushrooms, carrot, celery, garlic, 30 g seaweed.
+* bunch of garden herbs.
+
+Simmer for 3 hours, pour off through colander, let sit overnight.  Strain through cheescloth.  Yield 6 quarts.
+
