@@ -13,6 +13,15 @@
 ### ESP32
 
 *  basics
+	* blink
+	* button
+	* LED digital and PWM
+	* sound
+	* making motion.  Motor drivers and FETS.  
+	* making circuitboards.
+		* board house
+		* CNC milling pcb
+	* accelerometer.
 
 *  remote sensing.
 	* controller to controller
