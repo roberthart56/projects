@@ -21,7 +21,7 @@
 * Make examples and document them.
 
 
-### ESP32
+### ESP32 and/or RP2040
 
 *  basics
 	* blink
@@ -40,4 +40,5 @@
 	* controller to LAN
 	* internet
 *  Examples of art projects.
+*  modular machines
 	
