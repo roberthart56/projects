@@ -34,11 +34,14 @@
 		* CNC milling pcb
 	* accelerometer.
 
-*  remote sensing.
+*  remote sensing and controlling.
 	* controller to controller
 	* display
 	* controller to LAN
 	* internet
 *  Examples of art projects.
-*  modular machines
+*  modular machines.  How
+
+
+12/1/23.  Talking with Janet about bridging and onramps.  I tend to forget that we need "Why to make almost anything".  Her students use the DF tools for self-expression.  Can we create examples that show how to use tools for craft, life needs, self-expression, etc?  Janet is thinking of a collection of artifacts that connect DF and craft.  Oye's expertise and experience is important here - the wearables work this way for TPZ.
 	
