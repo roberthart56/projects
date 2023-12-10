@@ -33,7 +33,7 @@
 		* board house
 		* CNC milling pcb
 	* accelerometer.
-
+*  Provide dev boards for expanding xiaos, and document making/ordering these.
 *  remote sensing and controlling.
 	* controller to controller
 	* display
