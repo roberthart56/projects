@@ -44,4 +44,7 @@
 
 
 12/1/23.  Talking with Janet about bridging and onramps.  I tend to forget that we need "Why to make almost anything".  Her students use the DF tools for self-expression.  Can we create examples that show how to use tools for craft, life needs, self-expression, etc?  Janet is thinking of a collection of artifacts that connect DF and craft.  Oye's expertise and experience is important here - the wearables work this way for TPZ.
+
+12/20/23.  Janet's notes here:  https://docs.google.com/document/d/1n010lH773D3kmTXS1eJOZePPRWSBESHvCxciEHfNfRk/edit
+
 	

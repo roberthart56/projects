@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Read Text File into Array</title>
+</head>
+<body>
+
+
+<input type="file" id="fileInput" />
+<button onclick="readFile()">Read File</button>
+<div id="resultContainer"></div>
+
+
+<script>
+function readFile() {
+  const fileInput = document.getElementById('fileInput');
+  const file = fileInput.files[0];
+
+  if (file) {
+    const reader = new FileReader();
+
+    reader.onload = function (e) {
+      const content = e.target.result;
+      const lines = content.split('\n');
+      const line_1 = lines[0];
+      const num_char = line_1.split(',')
+      const intValue = Number(num_char[0]);
+
+console.log(intValue); // Output:
+      document.getElementById('resultContainer').innerHTML = intValue;
+ alert(intValue);
+    };
+
+    reader.readAsText(file);
+  } else {
+    alert('Please select a file');
+  }
+
+
+}
+</script>
+
+</body>
+</html>
