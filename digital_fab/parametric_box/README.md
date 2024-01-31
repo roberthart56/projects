@@ -11,3 +11,9 @@ Exported base rectangles for box parts.
 Use sketch to generate shopbot toolpaths for box with endmill and 90 degree v-bit.
 Make and try.
 Use python to generate parameter-based toolpaths.
+
+
+1/29/24  Try elmwood box.  Tape method is OK, but get glue on edges.
+Many problems with locating cuts and defining endmill diams!  
+Check model - some dimensions seem wrong!
+

@@ -30,7 +30,7 @@ https://micropython.org/download/esp32c3/
 
 Navigate to the esptool folder in the esptool downloaded folder, put the firmware binary in that folder.
 
-Flash the firmware:python  esptool.py --chip esp32c3 --port COM5 --baud 921600 --before default_reset --after hard_reset --no-stub  write_flash --flash_mode dio --flash_freq 80m 0x0 ESP32_GENERIC_C3-20240105-v1.22.1.bin
+Flash the firmware:python  esptool.py --chip esp32c3 --port COM21 --baud 921600 --before default_reset --after hard_reset --no-stub  write_flash --flash_mode dio --flash_freq 80m 0x0 ESP32_GENERIC_C3-20240105-v1.22.1.bin
 
 This erases and flashes device on COM18 with firmware in file downloaded from micropython site:
 
