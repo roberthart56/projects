@@ -14,7 +14,7 @@ pixels = NeoPixel(Pin(2), numpix)
 while True:
     for j in range(10000):
         for i in range(numpix):
-            pixels[i] = (255-i+j, i+j, 127 - i+j)
+            pixels[i] = (255-i+j, i+j, 127 +i-j)
         pixels.write()
         time.sleep(0.02)
 
