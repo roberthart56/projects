@@ -15,7 +15,7 @@ pwm7.duty(512)
 
 setpoint=2000
 
-t1=
+
 for _ in range(100):
     d=adc.read()  # read a raw analog value in the range 0-65535       
     print(d)			
