@@ -9,3 +9,5 @@ this would be a good way to do MIDI.
 right now, I'd like to try python in RPi playing sounds in pygame, with simple serial input from  an RP2040 of any persuasion, connected to sensors.  Apparently, multiple channels can play overlaid.
 https://stackoverflow.com/questions/42393916/how-can-i-play-multiple-sounds-at-the-same-time-in-pygame
 
+2/15/24
+Sparkfun tutorial:  https://learn.sparkfun.com/tutorials/python-programming-tutorial-getting-started-with-the-raspberry-pi/experiment-2-play-sounds
