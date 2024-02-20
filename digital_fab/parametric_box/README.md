@@ -25,9 +25,11 @@ Import the DXF into the shopbot software (aspire or v-carve), close the vectors,
 
 For precision, it may be good to add a partial sacrificial layer and level it with the large facing bit.  After levelling, attach stock.  I used the blue tape trick that I learned frok Dave Priess at CBA/MIT:  Blue masking tape adhesive side against both stock and bed.  Then attach with superglue between the tape backs.  This way, the tape peels well off of both box and bed, but holds well enough to machine.
 
-![cutting](./img/cut00.jpg)
-![cutting](./img/cut01.jpg)
-![cutting](./img/cut02.jpg)
+<img src="./img/cut00.jpg" alt="cut00" width="300" >
+<img src="./img/cut01.jpg" alt="cut00" width="300" >
+<img src="./img/cut02.jpg" alt="cut00" width="300" >
+
+
 
 Glueing.  If you leave the tape attached, you can glue most parts in one step.
 
