@@ -33,9 +33,9 @@ For precision, it may be good to add a partial sacrificial layer and level it wi
 
 Glueing.  If you leave the tape attached, you can glue most parts in one step.
 
+<img src="./img/box_assembly00.jpg" alt="cut00" width="400" >
+<img src="./img/box_assembly01" alt="cut00" width="400" >
 
-![cutting](./img/box_assembly00.jpg)
-![cutting](./img/box_assembly01.jpg)
 
 
 
