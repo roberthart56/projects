@@ -1,4 +1,6 @@
-## Parametric box	
+## Parametric box
+
+### Defining in parametric CAD and exporting DXF to shopbot toolpathing software.	
 
 The little black box that appeared in the lab in 2023 inspired this project.  This is a design for a parametric box cut on the shopbot.  Two kinds of cuts are made:  a v-bit cut at 90 degrees to make the hinges, and a cut with a straight endmill to make the rabbet cuts for the side panels and to cut out the parts.
 
@@ -19,9 +21,12 @@ Import the DXF into the shopbot software (aspire or v-carve), close the vectors,
 
 ![toolpaths](./img/toolpaths.png)
 
+![preview](./img/preview.png)
 
 
-Use python to generate parameter-based toolpaths.
+### Next steps.
+
+Use Python to generate parameter-based toolpaths directly.
 
 
 
