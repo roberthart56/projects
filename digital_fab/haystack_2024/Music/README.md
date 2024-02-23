@@ -12,9 +12,9 @@ Sparkfun tutorial:  https://learn.sparkfun.com/tutorials/python-programming-tuto
 
 ### What I've tried as of  2/22/24
 
-Microcontroller circuit actuated by buttons or photodiode(s).
-3D printed part to accept tapes.
-RP2040 Micropython to send string, e.g. '1 on', '1 off', etc.
-Python on computer to play sound.
-Use Audacity to record and save wav files.  Audacity specrogram is nice.
-Use calculated wav files or recorded sounds.
+ - Microcontroller circuit actuated by buttons or photodiode(s).
+ - 3D printed part to accept tapes.
+ - RP2040 Micropython to send string, e.g. '1 on', '1 off', etc.
+ - Python on computer to play sound.
+ - Use Audacity to record and save wav files.  Audacity specrogram is nice.
+ - Use calculated wav files or recorded sounds.
