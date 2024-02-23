@@ -35,6 +35,7 @@ Flash the firmware:python  esptool.py --chip esp32c3 --port COM21 --baud 921600 
 This erases and flashes device on COM18 with firmware in file downloaded from micropython site:
 
 
+This works still, 2/21/24.  Could not flash one that was attached to an LED, drawing ~few mA from 3.3V and into at least one GPIO pin.  OK when I detached and floated all inputs in space.
 
 
 1/11/24

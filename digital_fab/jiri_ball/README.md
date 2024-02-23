@@ -58,3 +58,10 @@ Set Polarity equal to zero for this chip.  This is the level of the idle clock. 
 [Here is a code that works](./code/SPI_23K256/SPI_23K256.py) to store and retrieve numbers from the 23K256.  All operations are written out.  Next step would be to put them in functions and create a library file for this chip. 
 
 This is a nice example of a simple but non-trivial protocol for SPI. 
+
+
+
+## Feb 2024.
+
+Use esp32c3 for its ability to battery manage.  Change pins and spi to use hardware spi, because that's the board that was available. This works, but gives overflow at high acc values for the PWM duty cycle.  Need to work on this, but looks like it should be solvable.  Take to Haystack.  Hope to iterate with cheaper and more reproducible solution.
+
