@@ -1,14 +1,15 @@
 import time
 import machine
 
-pin_list = ([0,7,1])    # list of input pins
+pin_list = ([0,7,6,29,28])    # list of input pins
 N = len(pin_list)  #variable for number of inputs
 
 inputs = ([0]*N)		#inputs
 
-for i in range(N):
+for i in range(N):    #buttons - need pullup resistors.
     inputs[i] = machine.Pin(pin_list[i], machine.Pin.IN, machine.Pin.PULL_UP)
-inputs[2] = machine.Pin(pin_list[2], machine.Pin.IN )   #special case - no internal pull
+# for i in range(2,N):   #phototransistors - no pullup.
+#     inputs[i] = machine.Pin(pin_list[i], machine.Pin.IN )   #special case - no internal pull
 
 tone_state = ([False]*N)
 

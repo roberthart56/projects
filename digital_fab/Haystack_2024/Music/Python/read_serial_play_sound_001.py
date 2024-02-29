@@ -8,18 +8,20 @@ mixer.init()
 
 sound0 = mixer.Sound('250Hz.wav')
 sound1 = mixer.Sound('1kHz.wav')
-sound2 = mixer.Sound('sine_wave.wav')
+sound2 = mixer.Sound('la.wav')
+sound3 = mixer.Sound('di.wav')
+sound4 = mixer.Sound('da.wav')
 
-serial_port = '/dev/ttyACM0'
-baud_rate = 115200  # Adjust as per your microcontroller's configuration
-#print('step 1')
+serial_port = 'COM14'        #'/dev/ttyACM0'   'COM10'
+baud_rate = 115200  
+
 
 ser = serial.Serial(serial_port, baud_rate)
 ser.flush()
 
-#time.sleep(1.5)
 
-while True:
+
+while True:				#currently a test of each case.  Needs a loop method.
     if ser.in_waiting>0:
         a=ser.readline()
         print(a)
@@ -41,5 +43,17 @@ while True:
         if a == b'2 off\r\n':
             print('turn off 2!')
             sound2.fadeout(200)
+        if a == b'3 on\r\n':
+            print('turn on 3!')
+            sound3.play()
+        if a == b'3 off\r\n':
+            print('turn off 3!')
+            sound3.fadeout(200)
+        if a == b'4 on\r\n':
+            print('turn on 4!')
+            sound4.play()
+        if a == b'4 off\r\n':
+            print('turn off 4!')
+            sound4.fadeout(200)
     #time.sleep(0.1)
 
