@@ -2,7 +2,7 @@
 from machine import Pin
 from neopixel import NeoPixel
 
-pixels = NeoPixel(Pin(2), 4)
+pixels = NeoPixel(Pin(20), 4)
 
     
 pixels[0] = (0,125,0)
