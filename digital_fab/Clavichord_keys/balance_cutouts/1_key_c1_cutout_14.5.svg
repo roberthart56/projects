@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 793.7007874015749 1122.5196850393702"
+   width="793.7007874015749"
+   height="1122.5196850393702"
+   version="1.1"
+   id="svg120"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <desc
+     id="desc2">1_key_c1_cutout_14.5.dxf - scale = 1.000000, origin = (0.000000, 0.000000), method = manual</desc>
+  <defs
+     id="defs16">
+    <marker
+       id="DistanceX"
+       orient="auto"
+       refX="0.0"
+       refY="0.0"
+       style="overflow:visible">
+      <path
+         d="M 3,-3 L -3,3 M 0,-5 L  0,5"
+         style="stroke:#000000; stroke-width:0.5"
+         id="path4" />
+    </marker>
+    <pattern
+       id="Hatch"
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       x="0"
+       y="0">
+      <path
+         d="M8 4 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path7" />
+      <path
+         d="M6 2 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path9" />
+      <path
+         d="M4 0 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path11" />
+    </pattern>
+    <symbol
+       id="*MODEL_SPACE" />
+    <symbol
+       id="*PAPER_SPACE" />
+  </defs>
+  <g
+     id="g18" />
+  <g
+     id="g20" />
+  <g
+     id="g22" />
+  <g
+     id="g24" />
+  <g
+     id="g26" />
+  <g
+     id="g28" />
+  <g
+     id="g30" />
+  <g
+     id="g32" />
+  <g
+     id="g34" />
+  <g
+     id="g36" />
+  <g
+     id="g38" />
+  <g
+     id="g40" />
+  <g
+     id="g42" />
+  <g
+     id="g44" />
+  <g
+     id="g46" />
+  <g
+     id="g48" />
+  <g
+     id="g50" />
+  <g
+     id="g52" />
+  <g
+     id="g54" />
+  <g
+     id="g56" />
+  <g
+     id="g58" />
+  <g
+     id="g60" />
+  <g
+     id="g62" />
+  <g
+     id="g64" />
+  <g
+     id="g66" />
+  <g
+     id="g68" />
+  <g
+     id="g70" />
+  <g
+     id="g72" />
+  <g
+     id="g74" />
+  <g
+     id="g76" />
+  <g
+     id="g100">
+    <path
+       style="fill:none;stroke:#000000"
+       d="m 260.43767,697.29214 h 253.228"
+       id="path78" />
+    <path
+       d="m 260.43764,697.29497 a 5.669291,5.669291 0 0 1 -5.6693,-5.66929"
+       style="fill:none;stroke:#000000"
+       id="path80" />
+    <path
+       style="fill:none;stroke:#000000"
+       d="m 254.76867,636.44214 v 55.18"
+       id="path82" />
+    <path
+       d="m 254.76834,636.44458 a 5.669291,5.669291 0 0 1 5.6693,-5.66929"
+       style="fill:none;stroke:#000000"
+       id="path84" />
+    <path
+       style="fill:none;stroke:#000000"
+       d="m 260.43767,630.77214 h 71.811"
+       id="path86" />
+    <path
+       d="m 332.24866,630.77529 a 5.669291,5.669291 0 0 1 5.66929,5.66929"
+       style="fill:none;stroke:#000000"
+       id="path88" />
+    <path
+       style="fill:none;stroke:#000000"
+       d="m 337.91767,636.44214 v 21.17"
+       id="path90" />
+    <path
+       style="fill:none;stroke:#000000"
+       d="m 337.91767,657.61214 h 175.748"
+       id="path92" />
+    <path
+       d="m 513.66598,657.60993 a 5.669291,5.669291 0 0 1 5.66929,5.6693"
+       style="fill:none;stroke:#000000"
+       id="path94" />
+    <path
+       style="fill:none;stroke:#000000"
+       d="m 519.33567,691.62214 v -28.34"
+       id="path96" />
+    <path
+       d="m 519.33527,691.62568 a 5.669291,5.669291 0 0 1 -5.66929,5.66929"
+       style="fill:none;stroke:#000000"
+       id="path98" />
+  </g>
+  <g
+     id="g102" />
+  <g
+     id="g104" />
+  <g
+     id="g106" />
+  <g
+     id="g108" />
+  <g
+     id="g110" />
+  <g
+     id="g112" />
+  <g
+     id="g114" />
+  <g
+     id="g116" />
+  <g
+     id="g118" />
+</svg>
