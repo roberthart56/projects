@@ -21,7 +21,7 @@ system_twin_to_real_ms = 200
 
 jog_rate = 100
 draw_rate = 50
-z_up = -4 
+z_up = -4
 z_down = 0
 draw_extents = [200, 80]
 
@@ -60,7 +60,7 @@ async def main():
         # raise Exception("bail")
 
         print("---------------------------------- wait for clocks to settle ...")
-        await osap.netrunner.await_time_settle(print_updates=True)
+        #await osap.netrunner.await_time_settle(print_updates=True)
 
         print("---------------------------------- machine setup ...")
         machine = RollerMachineMotion(osap, system_interpolation_interval, system_twin_to_real_ms)

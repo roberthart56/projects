@@ -4,7 +4,7 @@ from neopixel import NeoPixel
 import time
 
 numpix = 192
-pixels = NeoPixel(Pin(2), numpix)
+pixels = NeoPixel(Pin(10), numpix)
 
 # for i in range(numpix):
 #      pixels[i] = (255, 0, 0)

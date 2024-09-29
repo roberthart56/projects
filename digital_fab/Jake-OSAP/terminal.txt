@@ -1,0 +1,537 @@
+Here is the terminal record, running Python 3.12.5 in a venv on Windows.  
+
+Can also run on venv on R Pi in 3.12.2  On the Rpi the program never progresses beyond the 'waiting for clocks to settle' step.  
+
+
+(osap_python) C:\Users\rober\Documents\github\barebones-maxl\python>py run_roller.py
+---------------------------------- get our files ...
+File has: min, max x -2.91, 923.71 ... min, max y -1.46 458.94
+Moving all by (2.913918, 1.4563507)
+Now: min, max x 0.00, 926.63 ... min, max y 0.00 460.40
+Scaling by 0.174
+SVG has 2 segments...
+AUTO_USB: adding a port as RP2040
+auto_usb_serial found COM3, id: 000A, type: RP2040
+AUTO_USB: adding a port as RP2040
+auto_usb_serial found COM5, id: 000A, type: RP2040
+AUTO_USB: adding a port as RP2040
+auto_usb_serial found COM6, id: 000A, type: RP2040
+---------------------------------- collect system ...
+UPDATE_MAP STARTUP -----------------------------------------
+UPDATE_MAP recursor cycle completed... fixing link indices...
+UPDATE_MAP ----------------------- done after 97ms
+RT: build: 'Python' type: 'python_app' name: 'py-printer' at OSAP 0.7.1
+RT: build: 'Embedded_CPP' type: 'MAXLStepper' name: 'motor_y' at OSAP 0.7.1
+RT: build: 'Embedded_CPP' type: 'ServoThing' name: 'servo_z' at OSAP 0.7.1
+RT: build: 'Embedded_CPP' type: 'MAXLStepper' name: 'motor_x' at OSAP 0.7.1
+---------------------------------- wait for clocks to settle ...
+ERRS: [1345, 1848, 1458],       RTT: [1983, 3446, 2688]
+ERRS: [1418, 1305, 1722],       RTT: [2279, 2283, 3242]
+ERRS: [1428, 1219, 1168],       RTT: [2390, 2222, 2266]
+ERRS: [1400, 1356, 1662],       RTT: [2447, 2660, 3417]
+ERRS: [1257, 1592, 1062],       RTT: [2366, 3180, 2233]
+ERRS: [1544, 1560, 1224],       RTT: [2992, 3200, 2621]
+ERRS: [1434, 1368, 1730],       RTT: [2815, 2879, 3810]
+ERRS: [1838, 870, 1327],        RTT: [3674, 2067, 3022]
+ERRS: [1817, 1310, 930],        RTT: [3919, 3160, 2455]
+ERRS: [1131, 830, 758],         RTT: [2464, 2099, 2036]
+ERRS: [3092, 1196, 903],        RTT: [6527, 3010, 2439]
+ERRS: [1591, 811, 784],         RTT: [3803, 2264, 2299]
+ERRS: [1216, 930, 1086],        RTT: [2978, 2682, 3082]
+ERRS: [1082, 990, 983],         RTT: [2801, 2876, 2961]
+ERRS: [1115, 866, 700],         RTT: [2918, 2676, 2540]
+ERRS: [1028, 517, 565],         RTT: [2872, 2112, 2232]
+ERRS: [704, 464, 593],  RTT: [2297, 2124, 2398]
+ERRS: [938, 512, 461],  RTT: [2813, 2195, 2067]
+ERRS: [803, 434, 470],  RTT: [2590, 2111, 2098]
+CLOCKS OK...
+---------------------------------- machine setup ...
+MAXL expects 12 control pts between pt-gen and pt-consume, 62 of history
+Machine / Begin: Startup MAXL...
+MAXL: starting up motor_x ...
+MAXL: starting up motor_y ...
+MAXL: starting up servo_z ...
+Machine / Begin: ... done
+MAXL: WARNING: pt gen is sluggish by 32266us
+MAXL: WARNING: pt gen is sluggish by 20773us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+SEQ_TX RT_ATT: 1
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 75390us
+MAXL: WARNING: pt gen is sluggish by 63087us
+MAXL: WARNING: pt gen is sluggish by 48680us
+MAXL: WARNING: pt gen is sluggish by 34731us
+MAXL: WARNING: pt gen is sluggish by 20385us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 14842us
+motor_x: startup
+motor_y: startup
+servo_z: missed segment, 8484925 8484925
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+SEQ_TX RT_ATT: 1
+SEQ_TX RT_ATT: 1
+SEQ_TX RT_ATT: 1
+MAXL: WARNING: pt gen is sluggish by 43284us
+MAXL: WARNING: pt gen is sluggish by 30237us
+MAXL: WARNING: pt gen is sluggish by 17780us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+SEQ_TX RT_ATT: 1
+SEQ_TX RT_ATT: 1
+SEQ_TX RT_ATT: 1
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 75619us
+motor_x: missed segment, 11073597 11073597
+motor_y: missed segment, 11073597 11073597
+servo_z: missed segment, 11073597 11073597
+MAXL: WARNING: pt gen is sluggish by 68459us
+MAXL: WARNING: pt gen is sluggish by 55060us
+MAXL: WARNING: pt gen is sluggish by 40806us
+MAXL: WARNING: pt gen is sluggish by 26389us
+MAXL: WARNING: pt gen is sluggish by 11975us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 23982us
+MAXL: WARNING: pt gen is sluggish by 11474us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+SEQ_TX RT_ATT: 1
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 64321us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 52866us
+MAXL: WARNING: pt gen is sluggish by 38719us
+MAXL: WARNING: pt gen is sluggish by 25738us
+MAXL: WARNING: pt gen is sluggish by 11553us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 33839us
+MAXL: WARNING: pt gen is sluggish by 22612us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 19587us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+SEQ_TX RT_ATT: 1
+MAXL: WARNING: pt gen is sluggish by 90602us
+MAXL: WARNING: pt gen is sluggish by 80082us
+MAXL: WARNING: pt gen is sluggish by 66928us
+MAXL: WARNING: pt gen is sluggish by 53575us
+MAXL: WARNING: pt gen is sluggish by 39644us
+MAXL: WARNING: pt gen is sluggish by 25535us
+MAXL: WARNING: pt gen is sluggish by 11195us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 26665us
+motor_x: missed segment, 11925565 11925565
+MAXL: WARNING: pt gen is sluggish by 18444us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+SEQ_TX RT_ATT: 1
+MAXL: WARNING: pt gen is sluggish by 82280us
+MAXL: WARNING: pt gen is sluggish by 73021us
+MAXL: WARNING: pt gen is sluggish by 59728us
+MAXL: WARNING: pt gen is sluggish by 46347us
+MAXL: WARNING: pt gen is sluggish by 31976us
+MAXL: WARNING: pt gen is sluggish by 17544us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 59928us
+MAXL: WARNING: pt gen is sluggish by 46771us
+MAXL: WARNING: pt gen is sluggish by 33457us
+MAXL: WARNING: pt gen is sluggish by 19074us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+SEQ_TX RT_ATT: 1
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 51507us
+MAXL: WARNING: pt gen is sluggish by 37803us
+MAXL: WARNING: pt gen is sluggish by 24156us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 43053us
+MAXL: WARNING: pt gen is sluggish by 33027us
+MAXL: WARNING: pt gen is sluggish by 19710us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+SEQ_TX RT_ATT: 1
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 100593us
+MAXL: WARNING: pt gen is sluggish by 89667us
+MAXL: WARNING: pt gen is sluggish by 76108us
+MAXL: WARNING: pt gen is sluggish by 62417us
+MAXL: WARNING: pt gen is sluggish by 48793us
+MAXL: WARNING: pt gen is sluggish by 35195us
+MAXL: WARNING: pt gen is sluggish by 21828us
+motor_x: missed segment, 13023293 13023293
+motor_y: missed segment, 12302397 12302397
+servo_z: missed segment, 12695613 12695613
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 33388us
+MAXL: WARNING: pt gen is sluggish by 23362us
+MAXL: WARNING: pt gen is sluggish by 37864us
+MAXL: WARNING: pt gen is sluggish by 25783us
+MAXL: WARNING: pt gen is sluggish by 12377us
+MAXL: WARNING: pt gen is sluggish by 29156us
+MAXL: WARNING: pt gen is sluggish by 18337us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 21717us
+MAXL: WARNING: pt gen is sluggish by 10202us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 14934us
+MAXL: WARNING: pt gen is sluggish by 13098us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+SEQ_TX RT_ATT: 1
+SEQ_TX RT_ATT: 1
+MAXL: WARNING: pt gen is sluggish by 85876us
+motor_y: missed segment, 14202941 14202941
+servo_z: missed segment, 14202941 14202941
+MAXL: WARNING: pt gen is sluggish by 82977us
+MAXL: WARNING: pt gen is sluggish by 69642us
+MAXL: WARNING: pt gen is sluggish by 57152us
+MAXL: WARNING: pt gen is sluggish by 44111us
+MAXL: WARNING: pt gen is sluggish by 31241us
+MAXL: WARNING: pt gen is sluggish by 17973us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+SEQ_TX RT_ATT: 1
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 116770us
+MAXL: WARNING: pt gen is sluggish by 105665us
+MAXL: WARNING: pt gen is sluggish by 91924us
+MAXL: WARNING: pt gen is sluggish by 78705us
+MAXL: WARNING: pt gen is sluggish by 65343us
+MAXL: WARNING: pt gen is sluggish by 51843us
+MAXL: WARNING: pt gen is sluggish by 38320us
+MAXL: WARNING: pt gen is sluggish by 25438us
+MAXL: WARNING: pt gen is sluggish by 12522us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 51069us
+MAXL: WARNING: pt gen is sluggish by 40098us
+MAXL: WARNING: pt gen is sluggish by 26725us
+MAXL: WARNING: pt gen is sluggish by 13539us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 64811us
+MAXL: WARNING: pt gen is sluggish by 54466us
+MAXL: WARNING: pt gen is sluggish by 41502us
+MAXL: WARNING: pt gen is sluggish by 28087us
+MAXL: WARNING: pt gen is sluggish by 14661us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 20661us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+SEQ_TX RT_ATT: 1
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 87209us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 75647us
+MAXL: WARNING: pt gen is sluggish by 61476us
+MAXL: WARNING: pt gen is sluggish by 47158us
+MAXL: WARNING: pt gen is sluggish by 32973us
+MAXL: WARNING: pt gen is sluggish by 20557us
+motor_x: STARVED @ 14368006
+motor_y: STARVED @ 14368083
+servo_z: missed segment, 15185981 15185981
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+SEQ_TX RT_ATT: 1
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 62246us
+MAXL: WARNING: pt gen is sluggish by 52180us
+MAXL: WARNING: pt gen is sluggish by 38956us
+MAXL: WARNING: pt gen is sluggish by 25734us
+MAXL: WARNING: pt gen is sluggish by 13340us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+SEQ_TX RT_ATT: 1
+SEQ_TX RT_ATT: 1
+SEQ_TX RT_ATT: 1
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 132165us
+MAXL: WARNING: pt gen is sluggish by 121764us
+MAXL: WARNING: pt gen is sluggish by 108466us
+MAXL: WARNING: pt gen is sluggish by 95798us
+MAXL: WARNING: pt gen is sluggish by 82619us
+MAXL: WARNING: pt gen is sluggish by 70603us
+MAXL: WARNING: pt gen is sluggish by 58209us
+MAXL: WARNING: pt gen is sluggish by 44481us
+MAXL: WARNING: pt gen is sluggish by 31560us
+MAXL: WARNING: pt gen is sluggish by 20465us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+SEQ_TX RT_ATT: 1
+SEQ_TX RT_ATT: 1
+SEQ_TX RT_ATT: 1
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 87045us
+MAXL: WARNING: pt gen is sluggish by 76766us
+MAXL: WARNING: pt gen is sluggish by 63240us
+MAXL: WARNING: pt gen is sluggish by 49201us
+MAXL: WARNING: pt gen is sluggish by 36113us
+MAXL: WARNING: pt gen is sluggish by 24079us
+MAXL: WARNING: pt gen is sluggish by 10627us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 24842us
+MAXL: WARNING: pt gen is sluggish by 13210us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 55800us
+MAXL: WARNING: pt gen is sluggish by 43685us
+motor_x: missed segment, 15857725 15857725
+motor_y: missed segment, 15857725 15857725
+servo_z: missed segment, 15857725 15857725
+MAXL: WARNING: pt gen is sluggish by 34044us
+MAXL: WARNING: pt gen is sluggish by 20920us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+SEQ_TX RT_ATT: 1
+MAXL: WARNING: pt gen is sluggish by 75922us
+MAXL: WARNING: pt gen is sluggish by 65690us
+MAXL: WARNING: pt gen is sluggish by 51451us
+MAXL: WARNING: pt gen is sluggish by 37183us
+MAXL: WARNING: pt gen is sluggish by 22916us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 10235us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 38827us
+MAXL: WARNING: pt gen is sluggish by 27402us
+MAXL: WARNING: pt gen is sluggish by 14148us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 35143us
+MAXL: WARNING: pt gen is sluggish by 21968us
+MAXL: WARNING: pt gen is sluggish by 35433us
+MAXL: WARNING: pt gen is sluggish by 24453us
+MAXL: WARNING: pt gen is sluggish by 10221us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+SEQ_TX RT_ATT: 1
+MAXL: WARNING: pt gen is sluggish by 94214us
+motor_x: missed segment, 17217597 17217597
+MAXL: WARNING: pt gen is sluggish by 90256us
+MAXL: WARNING: pt gen is sluggish by 77106us
+MAXL: WARNING: pt gen is sluggish by 63861us
+MAXL: WARNING: pt gen is sluggish by 50692us
+MAXL: WARNING: pt gen is sluggish by 37121us
+MAXL: WARNING: pt gen is sluggish by 23957us
+MAXL: WARNING: pt gen is sluggish by 11642us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 10520us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+SEQ_TX RT_ATT: 1
+SEQ_TX RT_ATT: 1
+MAXL: WARNING: pt gen is sluggish by 101540us
+MAXL: WARNING: pt gen is sluggish by 91760us
+MAXL: WARNING: pt gen is sluggish by 77506us
+MAXL: WARNING: pt gen is sluggish by 63419us
+MAXL: WARNING: pt gen is sluggish by 50180us
+MAXL: WARNING: pt gen is sluggish by 36376us
+MAXL: WARNING: pt gen is sluggish by 22935us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+SEQ_TX RT_ATT: 1
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 54019us
+MAXL: WARNING: pt gen is sluggish by 42446us
+MAXL: WARNING: pt gen is sluggish by 28174us
+MAXL: WARNING: pt gen is sluggish by 14869us
+SEQ_TX RT_ATT: 1
+MAXL: WARNING: pt gen is sluggish by 92401us
+MAXL: WARNING: pt gen is sluggish by 80809us
+MAXL: WARNING: pt gen is sluggish by 67534us
+MAXL: WARNING: pt gen is sluggish by 53205us
+MAXL: WARNING: pt gen is sluggish by 39303us
+MAXL: WARNING: pt gen is sluggish by 25779us
+MAXL: WARNING: pt gen is sluggish by 12011us
+SEQ_TX RT_ATT: 1
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 69303us
+MAXL: WARNING: pt gen is sluggish by 57243us
+MAXL: WARNING: pt gen is sluggish by 43864us
+MAXL: WARNING: pt gen is sluggish by 30022us
+motor_x: missed segment, 18233405 18233405
+motor_y: missed segment, 18004029 18004029
+servo_z: missed segment, 17594429 17594429
+MAXL: WARNING: pt gen is sluggish by 20231us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 29721us
+MAXL: WARNING: pt gen is sluggish by 17388us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+SEQ_TX RT_ATT: 1
+SEQ_TX RT_ATT: 1
+MAXL: WARNING: pt gen is sluggish by 110358us
+MAXL: WARNING: pt gen is sluggish by 100825us
+MAXL: WARNING: pt gen is sluggish by 86666us
+MAXL: WARNING: pt gen is sluggish by 72265us
+MAXL: WARNING: pt gen is sluggish by 57785us
+MAXL: WARNING: pt gen is sluggish by 43251us
+MAXL: WARNING: pt gen is sluggish by 28939us
+MAXL: WARNING: pt gen is sluggish by 14611us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 30641us
+MAXL: WARNING: pt gen is sluggish by 18298us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+SEQ_TX RT_ATT: 1
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 97604us
+MAXL: WARNING: pt gen is sluggish by 88269us
+MAXL: WARNING: pt gen is sluggish by 74304us
+MAXL: WARNING: pt gen is sluggish by 60096us
+MAXL: WARNING: pt gen is sluggish by 45863us
+MAXL: WARNING: pt gen is sluggish by 31701us
+MAXL: WARNING: pt gen is sluggish by 17871us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+SEQ_TX RT_ATT: 1
+SEQ_TX RT_ATT: 1
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 91392us
+MAXL: WARNING: pt gen is sluggish by 80300us
+motor_x: missed segment, 19216445 19216445
+motor_y: missed segment, 19216445 19216445
+servo_z: missed segment, 18987069 18987069
+MAXL: WARNING: pt gen is sluggish by 71847us
+MAXL: WARNING: pt gen is sluggish by 58652us
+MAXL: WARNING: pt gen is sluggish by 45194us
+MAXL: WARNING: pt gen is sluggish by 32444us
+MAXL: WARNING: pt gen is sluggish by 18535us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 19744us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 18831us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 25393us
+MAXL: WARNING: pt gen is sluggish by 11656us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+SEQ_TX RT_ATT: 1
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 85907us
+MAXL: WARNING: pt gen is sluggish by 74212us
+MAXL: WARNING: pt gen is sluggish by 60226us
+MAXL: WARNING: pt gen is sluggish by 46847us
+MAXL: WARNING: pt gen is sluggish by 32790us
+MAXL: WARNING: pt gen is sluggish by 20511us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+SEQ_TX RT_ATT: 1
+MAXL: WARNING: pt gen is sluggish by 76019us
+MAXL: WARNING: pt gen is sluggish by 64274us
+MAXL: WARNING: pt gen is sluggish by 49996us
+MAXL: WARNING: pt gen is sluggish by 35955us
+MAXL: WARNING: pt gen is sluggish by 21613us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 25372us
+motor_y: missed segment, 20101181 20101181
+servo_z: missed segment, 19888189 19888189
+MAXL: WARNING: pt gen is sluggish by 17888us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 20181us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+SEQ_TX RT_ATT: 1
+SEQ_TX RT_ATT: 1
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 117386us
+MAXL: WARNING: pt gen is sluggish by 107302us
+MAXL: WARNING: pt gen is sluggish by 93635us
+MAXL: WARNING: pt gen is sluggish by 79797us
+MAXL: WARNING: pt gen is sluggish by 65962us
+MAXL: WARNING: pt gen is sluggish by 52190us
+MAXL: WARNING: pt gen is sluggish by 38020us
+MAXL: WARNING: pt gen is sluggish by 23739us
+MAXL: WARNING: pt gen is sluggish by 26308us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 13601us
+SEQ_TX RT_ATT: 1
+SEQ_TX RT_ATT: 1
+SEQ_TX RT_ATT: 1
+MAXL: WARNING: pt gen is sluggish by 122345us
+MAXL: WARNING: pt gen is sluggish by 113059us
+MAXL: WARNING: pt gen is sluggish by 99529us
+MAXL: WARNING: pt gen is sluggish by 85378us
+MAXL: WARNING: pt gen is sluggish by 70992us
+MAXL: WARNING: pt gen is sluggish by 56999us
+MAXL: WARNING: pt gen is sluggish by 42936us
+MAXL: WARNING: pt gen is sluggish by 28627us
+MAXL: WARNING: pt gen is sluggish by 14360us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 15806us
+motor_x: STARVED @ 20960025
+motor_y: STARVED @ 20960305
+servo_z: missed segment, 21002301 21002301
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 24515us
+MAXL: WARNING: pt gen is sluggish by 12340us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 17477us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+SEQ_TX RT_ATT: 1
+MAXL: WARNING: pt gen is sluggish by 57287us
+MAXL: WARNING: pt gen is sluggish by 44268us
+MAXL: WARNING: pt gen is sluggish by 29961us
+MAXL: WARNING: pt gen is sluggish by 16533us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+SEQ_TX RT_ATT: 1
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: pt gen is sluggish by 82587us
+MAXL: WARNING: pt gen is sluggish by 71364us
+MAXL: WARNING: pt gen is sluggish by 57166us
+MAXL: WARNING: pt gen is sluggish by 43217us
+MAXL: WARNING: pt gen is sluggish by 29247us
+MAXL: WARNING: pt gen is sluggish by 16327us
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000007 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+MAXL: WARNING: rejecting move of 0.000000 for all axes vs min 0.01
+Flush...
+motor_x: missed segment, 21919805 21919805
+---------------------------------- END of main()
+---------------------------------- Finally: attempting shutdown...
+MAXL: ... shutting down
+MAXL: ... loop exit
+MAXL: attempting shutdown of motor_x ...
+MAXL: ... shutdown of motor_x OK
+MAXL: attempting shutdown of motor_y ...
+MAXL: ... shutdown of motor_y OK
+MAXL: attempting shutdown of servo_z ...
+MAXL: ... shutdown of servo_z OK
+MAXL: ... shutdown OK
+----------------------------------  shutdown OK
+
+(osap_python) C:\Users\rober\Documents\github\barebones-maxl\python>
