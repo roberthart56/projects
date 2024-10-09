@@ -1,9 +1,13 @@
 #Version 3.  Makes toolpaths counter-clockwise.
 # Define the path to your text file
-file_path = 'nomad_head.txt'
+file_path = 'c5_r1.txt'
 
-w = 10.0 #17.6	#rectangle width  
-h = 30.0 #22.0	#rectangle height  
+# Enter the following four parameters:
+x_corner = 1.95		#rectangle origin  
+y_corner = 3.5
+w = 17.6	#rectangle width  
+h = 22.0	#rectangle height  
+
 a = min(w,h)  #rectangle minimum dimension
 
 #toolpath parameters
@@ -16,8 +20,8 @@ cut_depth = 2
 depth = 13.5
 
 
-x_corner = 9.6 #2.15		#rectangle origin  
-y_corner = 0.0  #4.00	     #
+
+#
 
 
 

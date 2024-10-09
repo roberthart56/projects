@@ -1,9 +1,26 @@
-#Version 3.  Makes toolpaths counter-clockwise.
+#Version 4.  Makes toolpaths counter-clockwise.
 # Define the path to your text file
-file_path = 'nomad_head.txt'
+# Allows a better way to enter parameters, and to save as comments to provide
+# a trace of what has been done.
 
-w = 10.0 #17.6	#rectangle width  
-h = 30.0 #22.0	#rectangle height  
+file_path = 'd1_r1.txt'
+pars = (2.00, 4.00, 17.6, 22.0, 13.5) #(x0,y0,w,h,d)
+
+# file_path = 'd1_r2.txt'
+# pars = (x0,y0,w,h,d)
+# 
+# file_path = 'd2_r1.txt'
+# pars = (x0,y0,w,h,d)
+# 
+# file_path = 'd2_r2.txt'
+# pars = (x0,y0,w,h,d)
+
+
+x_corner = pars[0]		#rectangle origin  
+y_corner = pars[1]
+w = pars[2]	#rectangle width  
+h = pars[3]	#rectangle height  
+
 a = min(w,h)  #rectangle minimum dimension
 
 #toolpath parameters
@@ -13,11 +30,11 @@ st = 0.8      #stepover
 start_z = 0
 z_safe = 3
 cut_depth = 2
-depth = 13.5
+depth = pars[4]
 
 
-x_corner = 9.6 #2.15		#rectangle origin  
-y_corner = 0.0  #4.00	     #
+
+#
 
 
 
