@@ -1,7 +1,7 @@
 from machine import Pin 
 import time
 
-led = Pin(7, Pin.OUT)   #led is created as an instance of the class Pin
+led = Pin(0, Pin.OUT)   #led is created as an instance of the class Pin
 
 while True:
     led.value(1)
