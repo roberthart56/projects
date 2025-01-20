@@ -4,32 +4,32 @@
 # a trace of what has been done.
 
 
-file_path = 'key_2.nc'
-pars = (-7.4, -77.0, 5.9, 70.0, 13.0) #(x0,y0,w,h,d)
+#file_path = 'key_2.nc'
+#pars = (-7.4, -77.0, 5.9, 70.0, 13.0) #(x0,y0,w,h,d)
 #
 #file_path = 'key_4.nc'
-#pars = (2.00, 4.00, 17.6, 22.0, 13.5) #(x0,y0,w,h,d)
+#pars = (-6.6, -77.0, 5.1, 70.0, 13.0) #(x0,y0,w,h,d)
 #
 #file_path = 'key_7.nc'
-#pars = (2.00, 4.00, 17.6, 22.0, 13.5) #(x0,y0,w,h,d)
+#pars = (-7.0, -20.0, 5.5, 13.0, 12.0) #(x0,y0,w,h,d)
 #
 #file_path = 'key_9.nc'
-#pars = (2.00, 4.00, 17.6, 22.0, 13.5) #(x0,y0,w,h,d)
+#pars = (-6.9, -52.0, 5.4, 45.0, 12.0) #(x0,y0,w,h,d)
 #
 #file_path = 'key_40.nc'
-#pars = (2.00, 4.00, 17.6, 22.0, 13.5) #(x0,y0,w,h,d)
+#pars = (-7.7, -77.0, 6.2, 70.0, 12.0) #(x0,y0,w,h,d)
 #
 #file_path = 'key_43.nc'
-#pars = (2.00, 4.00, 17.6, 22.0, 13.5) #(x0,y0,w,h,d)
+#pars = (-6.3, -32.0, 4.8, 25.0, 12.0) #(x0,y0,w,h,d)
 #
 #file_path = 'key_45.nc'
-#pars = (2.00, 4.00, 17.6, 22.0, 13.5) #(x0,y0,w,h,d)
+#pars = (-7.0, -29.0, 5.5, 22.0, 12.0) #(x0,y0,w,h,d)
 #
 #file_path = 'key_47.nc'
-#pars = (2.00, 4.00, 17.6, 22.0, 13.5) #(x0,y0,w,h,d)
+#pars = (-7.9, -77.0, 6.4, 70.0, 13.0) #(x0,y0,w,h,d)
 #
-#file_path = 'key_50.nc'
-#pars = (2.00, 4.00, 17.6, 22.0, 13.5) #(x0,y0,w,h,d)
+file_path = 'key_50.nc'
+pars = (-7.3, -77.0, 5.8, 70.0, 13.0) #(x0,y0,w,h,d)
 
 
 x_corner = pars[0]		#rectangle origin  
