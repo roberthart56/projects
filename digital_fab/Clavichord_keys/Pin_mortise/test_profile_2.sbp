@@ -1,0 +1,37 @@
+'test_profile_2
+'File created: Thursday April 10 2025 - 10:55 AM
+'SHOPBOT FILE IN INCHES
+IF %(25)=1 THEN GOTO UNIT_ERROR	'check to see software is set to standard
+C#,90				 	'Lookup offset values
+'
+'Turning router ON
+SO,1,1
+PAUSE 2
+'
+'
+'Toolpath Name = test_profile_2
+'Tool Name   = End Mill (0.0625 inches)
+MS,0.5,0.5
+JZ,0.787402
+J2,0.000000,0.000000
+J3,0.188730,0.188730,0.196850
+M3,0.188730,0.188730,-0.039370
+M3,0.441191,0.188730,-0.039370
+M3,0.441191,0.441191,-0.039370
+M3,0.188730,0.441191,-0.039370
+M3,0.188730,0.188730,-0.039370
+M3,0.188730,0.188730,-0.078740
+M3,0.441191,0.188730,-0.078740
+M3,0.441191,0.441191,-0.078740
+M3,0.188730,0.441191,-0.078740
+M3,0.188730,0.188730,-0.078740
+J3,0.188730,0.188730,0.196850
+JZ,0.787402
+'
+'Turning router OFF
+SO,1,0
+J2,0.000000,0.000000
+END
+UNIT_ERROR:
+C#,91					'Run file explaining unit error
+END
