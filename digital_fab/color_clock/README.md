@@ -20,7 +20,7 @@ PLA parts to make a case.
 
 | | | | |
 |---|---|---|---|
-| ![1](./img/assembly.jpg) | ![1](./img/parts.jpg) | ![1](./img/nuts.jpg) |Here I'll try to add text.  Add enough that it has to go to a second line.|
+| ![1](./img/assembly.jpg) | ![1](./img/parts.jpg) | ![1](./img/nuts.jpg) | 3D printed parts for stepper.  Slots allow adjustment in two directions.  Captured nuts for connecting pats and attaching spindle to motor shaft.|
 
 
 
