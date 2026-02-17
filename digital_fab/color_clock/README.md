@@ -18,9 +18,9 @@ Steppers, drivers, and cases
 PLA parts to make a case.
 
 
-| | | |
-|---|---|---|
-| ![1](./img/assembly.jpg) | ![1](./img/parts.jpg) | ![1](./img/nuts.jpg) |
+| | | | |
+|---|---|---|---|
+| ![1](./img/assembly.jpg) | ![1](./img/parts.jpg) | ![1](./img/nuts.jpg) |Here I'll try to add text.  Add enough that it has to go to a second line.|
 
 
 
