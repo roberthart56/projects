@@ -9,6 +9,13 @@ Stephen Bates.
 
 Steppers, drivers, and cases
 
+| | | | |
+|---|---|---|---|
+| ![1](./img/mod_thing.jpg) | ![2](./img/holder.jpg) | ![3](./img/oled_board.jpg) |![4](./img/wires.jpg) |
+
+
+
+
 <img src="./img/mod_thing.jpg" width="500"> 
 
 
