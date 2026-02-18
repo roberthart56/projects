@@ -15,12 +15,12 @@ Steppers, drivers, and cases
 | Electronics case | Motor holder | OLED on breadboard | Wiring mess |
 
 
-PLA parts to make a case.
+PLA parts to position the stepper motor.
 
 
 | | | | |
 |---|---|---|---|
-| ![1](./img/assembly.jpg) | ![1](./img/parts.jpg) | ![1](./img/nuts.jpg) | 3D printed parts for stepper.  Slots allow adjustment in two directions.  Captured nuts for connecting pats and attaching spindle to motor shaft.|
+| ![1](./img/assembly.jpg) | ![1](./img/parts.jpg) | ![1](./img/nuts.jpg) | 3D printed parts for stepper.  Slots allow adjustment in two directions.  Captured nuts for connecting parts and attaching spindle to motor shaft.|
 
 
 
