@@ -23,6 +23,13 @@ PLA parts to position the stepper motor.
 | ![1](./img/assembly.jpg) | ![1](./img/parts.jpg) | ![1](./img/nuts.jpg) | 3D printed parts for stepper.  Slots allow adjustment in two directions.  Captured nuts for connecting parts and attaching spindle to motor shaft.|
 
 
+Placing parts in case, and soldering connections.  
+
+| | | |
+|---|---|---|
+| ![1](./img/wired_module.jpg) | ![2](./img/all_in_box.jpg) | placeholder fo next pic. |
+
+
 
 
 
