@@ -27,7 +27,10 @@ Placing parts in case, and soldering connections.
 
 | | | |
 |---|---|---|
+| ![](./img/wired_module.jpg) | ![2](./img/all_in_box.jpg) | placeholder fo next pic. |
+| text1 | text2 | text3 |
 | ![1](./img/wired_module.jpg) | ![2](./img/all_in_box.jpg) | placeholder fo next pic. |
+
 
 
 
