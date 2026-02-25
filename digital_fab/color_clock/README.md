@@ -33,7 +33,7 @@ Placing parts in case, and soldering connections.  A ribbon cable connects pins 
 
 
 The parts all together and ready to install are below.
-![1](./img/assembly_1.jpg)
+![1](./img/Assembly1.jpg)
 
 
 
