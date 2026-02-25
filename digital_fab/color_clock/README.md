@@ -24,13 +24,17 @@ Electronics for the stepper are on a modular board from MIT.  The board fits int
 
 
 
-Placing parts in case, and soldering connections.  
+Placing parts in case, and soldering connections.  A ribbon cable connects pins of microcontroller with the OLED and buttons.  OLED fits into the lid of the box.    
 
 | | | |
 |---|---|---|
-| ![](./img/wired_module.jpg) | ![2](./img/all_in_box.jpg) | placeholder fo next pic. |
-| text1 | text2 | text3 |
-| ![1](./img/wired_module.jpg) | ![2](./img/all_in_box.jpg) | placeholder fo next pic. |
+| ![](./img/wired_module.jpg) | ![2](./img/all_in_box.jpg) |![1](./img/finished_wiring.jpg) |
+| Stepper module| Electronics case | Case connections |
+
+
+The parts all together and ready to install are below.
+![1](./img/assembly_1.jpg)
+
 
 
 
