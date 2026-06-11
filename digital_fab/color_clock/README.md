@@ -37,6 +37,9 @@ The parts all together and ready to install are below.
 <img src="./img/Assembly1.jpg" width="400">
 
 
+![waring](./img/clock_in_place_reduced.png)
+
+At Waring, students built a replica during the spring 2026 semester.
 
 
 

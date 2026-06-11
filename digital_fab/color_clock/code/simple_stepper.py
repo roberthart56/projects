@@ -2,14 +2,15 @@ from machine import Pin, PWM
 from time import sleep
 from math import sin, asin, sqrt, pi, cos, acos
 
-pwma = PWM(Pin(27), freq=500000, duty_u16=32768)  # vref for A
-pwmb = PWM(Pin(29), freq=500000, duty_u16=32768)   #vref for B
+#pwma = PWM(Pin(27), freq=500000, duty_u16=32768)  # vref for A
+#pwmb = PWM(Pin(29), freq=500000, duty_u16=32768)   #vref for B
 
-pwma.duty_u16(2100) #with .3 mOhm Sense Resistor, I = V/3
-pwmb.duty_u16(2400)
+#pwma.duty_u16(2100) #with .3 mOhm Sense Resistor, I = V/3
+#pwmb.duty_u16(2400)
+step_t = .01
 
-# REF_A = Pin(27, Pin.OUT)	#for 30 Ohm phase and 5V supply, set current to max.
-# REF_B = Pin(29, Pin.OUT)
+REF_A = Pin(27, Pin.OUT)	#for 30 Ohm phase and 5V supply, set current to max.
+REF_B = Pin(29, Pin.OUT)
 
 
 A1_in = Pin(6, Pin.OUT)
@@ -17,8 +18,8 @@ A2_in = Pin(7, Pin.OUT)
 B1_in = Pin(28, Pin.OUT)
 B2_in = Pin(4, Pin.OUT)
 
-# REF_A.on()
-# REF_B.on()
+REF_A.on()
+REF_B.on()
 
 def stepper_off():
     A1_in.off()
@@ -66,7 +67,7 @@ while True:
     for i in range(4):
         step(i)
         print(i)
-        sleep(1)
+        sleep(step_t)
         
     
 stepper_off()
